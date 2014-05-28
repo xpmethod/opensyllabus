@@ -13,8 +13,6 @@ import urllib2
 logPath = '/mnt/osp-archive-mount/code/twitter/'
 dumpPath = '/mnt/osp-archive-mount/document-dump/'
 
-download(search())
-
 def login():
     try:
         with open(logPath+'twitter-log.csv', 'r') as f:
@@ -103,3 +101,5 @@ def download(finalurls):    #finalurls is a list of URLs to download
                 counter += 1
             with open(dumpPath+date+'/'+filename, 'w') as file:
                 file.write(site.read())
+
+download(search())
