@@ -11,7 +11,7 @@ import urllib2
 
 #log contains Twitter login creds and timestamp for most recent Tweet collected
 logPath = '/mnt/osp-archive-mount/code/twitter/'
-dumpPath = '/mnt/osp-archive-mount/document-dump/'
+dumpPath = '/mnt/osp-archive-mount/document-dump/twitter/'
 
 def login():
     try:
