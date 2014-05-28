@@ -1,0 +1,101 @@
+A copy of this license is included with your distribution of PDFTextStream™ Software.
+
+SNOWTIDE™ INFORMATICS SYSTEMS, INC.
+PDFTEXTSTREAM™ SOFTWARE END USER LICENSE AGREEMENT ("EULA")
+
+IMPORTANT:  
+
+•	NEVER USE THE SOFTWARE TO VIOLATE ANYONE’S INTELLECTUAL PROPERTY OR OTHER RIGHTS.
+
+•	THIS EULA IS A CONTRACT BETWEEN YOU AND SNOWTIDE. READ IT CAREFULLY BEFORE COMPLETING THE INSTALLATION PROCESS AND USING THE SOFTWARE.  IT PROVIDES A LICENSE TO USE THE SOFTWARE AND CONTAINS WARRANTY INFORMATION AND LIABILITY DISCLAIMERS.  BY INSTALLING AND USING THE SOFTWARE, YOU CONFIRM YOUR ACCEPTANCE OF THE SOFTWARE AND AGREE TO BE BOUND BY THIS EULA.  IF YOU DO NOT AGREE TO BE BOUND, DO NOT INSTALL OR USE THE SOFTWARE.
+
+1.  Definitions
+(a)	"Snowtide" means Snowtide Informatics Systems, Inc. and its suppliers and licensors, if any.
+(b)	"Trial Version" means a version of the Software to be used only to review
+and evaluate the Software.  The Trial Version may have limited functionality and
+may alter ts output or behaviour.
+(c)	"Software" means the PDFTextStream™ software program and third party software program(s) supplied by Snowtide with it, which may also include associated media, printed materials, and electronic documentation. The Trial Version is also “Software” under this EULA.
+(d)	"Production Environment" means a single computer system used to provide capabilities and features to the public or to the end users of your products or services.
+
+2.  License 
+This EULA allows you to:
+(a)	Absent a purchased license key, either:
+  (i) evaluate the Software for potential future inclusion in your products or services, where such evaluation may not include using the Software in any Production Environment
+  (ii) Install and use the Software in Production Environments in
+  "single-threaded applications", as defined and described in the technical
+  documentation of the Software.
+(b)	Install and use the Software on a single Production Environment OR store the Software on a storage device, like a network server, used only to install the Software on other Production Environments over an internal network, provided you have a license key for each Production Environment on which the Software is installed and run.  A license key for the Software may not be shared or used concurrently on different computers.
+(c)	Make one copy of the Software in machine-readable form only for backup purposes. You must reproduce all copyright notices and other proprietary legends on the original copy of the Software on each copy.
+
+3.  License Restrictions
+(a)	Except as allowed by Section 2, you may not make or distribute copies of the Software or electronically transfer the Software from one computer to another or over a network. 
+(b)	You may not decompile, reverse engineer, disassemble, or otherwise reduce the Software to a human-perceivable form. 
+(c)	You may not rent, lease, or sublicense the Software.
+(d)	You may not redistribute the Software as part of another application.
+(e)	You may permanently transfer all of your rights under this EULA  provided you keep no copies, you transfer all of the Software (including all component parts, the media and printed materials, any upgrades, this EULA, and the serial numbers or license files), and the recipient agrees to this EULA. If the Software is an upgrade, any transfer must include all prior versions of the Software.  You may not sell or transfer any Software purchased under a volume discount.
+(f)	You may not modify the Software or create derivative works based upon the Software. 
+(g)	You may not export the Software into any country prohibited by the United States Export Administration Act and the regulations thereunder.
+(h)	It is possible to use the Software (and many other programs) to violate the intellectual property and other rights of others. No permission for any such use is given by this EULA. You agree to hold Snowtide harmless and pay all costs including attorney fees because of your use of the Software. 
+(i)	If you fail to comply with this EULA, Snowtide may terminate the license and you must destroy all copies of the Software.
+
+4.  Upgrades
+If this copy of the Software is an upgrade from an earlier version of the Software, it is provided to you on a license exchange basis.  Your installation and use of this copy of the Software means you have voluntarily terminated your earlier EULA and that you will not continue to use the earlier version of the Software or transfer it unless the transfer complies with Section 3.
+
+5.  Ownership
+This EULA gives you a limited license to use the Software. Snowtide and its suppliers retain all right, title and interest, including all intellectual property rights, in and to the Software and all copies . All rights not specifically granted in this EULA, including U.S. and International Copyrights, are reserved by Snowtide and its suppliers.
+
+6.  LIMITED WARRANTY AND DISCLAIMER
+(a)	LIMITED WARRANTY.  Snowtide warrants that for ninety (90) days from the date of delivery (as evidenced by a copy of your purchase receipt): (i) when used with a recommended hardware and software configuration, the Software will perform substantially according to the documentation supplied with the Software; and (ii) any physical media on which the Software is furnished is free from defects in materials and workmanship under normal use. 
+(b)	NO OTHER WARRANTY.  EXCEPT AS SET FORTH ABOVE, SNOWTIDE DISCLAIMS ALL OTHER WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THERE IS NO WARRANTY OF NONINFRINGEMENT, TITLE OR QUIET ENJOYMENT. IF APPLICABLE LAW REQUIRES ANY WARRANTIES OTHER THAN WHAT IS GRANTED HERE, ALL SUCH WARRANTIES ARE LIMITED TO NINETY (90) DAYS FROM THE DATE OF DELIVERY. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY SNOWTIDE, ITS DEALERS, DISTRIBUTORS, AGENTS OR EMPLOYEES CREATES A WARRANTY OR INCREASES THE SCOPE OF THIS WARRANTY.
+(c)	(USA ONLY) SOME STATES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE EXCLUSION MAY NOT APPLY TO YOU. THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS. YOU MAY ALSO HAVE OTHER LEGAL RIGHTS THAT VARY FROM STATE TO STATE.
+
+7.  Exclusive Remedy
+Your exclusive remedy under Section 6 is to return the Software to the place you acquired it, with a copy of your receipt and a description of the problem. Snowtide will use reasonable commercial efforts to supply you with a replacement copy of the Software that substantially conforms to the documentation, provide a replacement for defective media, or refund your purchase price for the Software, at its option. Snowtide will not be liable under this provision if the Software has been altered in any way, if the media has been damaged by accident, abuse or misapplication, or if the failure arises out of using the Software with other than a recommended hardware and software configuration.
+
+8.  LIMITATION OF LIABILITY.
+(a)	SNOWTIDE SHALL NOT BE LIABLE TO ANYONE FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING DAMAGES FOR LOSS OF BUSINESS, LOSS OF PROFITS, BUSINESS INTERRUPTION OR THE LIKE) ARISING FROM USING OR NOT BEING ABLE TO USE, THE SOFTWARE AND BASED ON ANY THEORY OF LIABILITY INCLUDING BREACH OF CONTRACT, BREACH OF WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, EVEN IF SNOWTIDE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND EVEN IF THE REMEDY ALLOWED IN THIS EULA FAILED OF ITS ESSENTIAL PURPOSE.
+(b)	SNOWTIDE'S TOTAL LIABILITY FOR ACTUAL DAMAGES FOR ANY REASON WILL BE LIMITED TO THE GREATER OF $500 US DOLLARS OR THE AMOUNT YOU PAID FOR THE SOFTWARE THAT CAUSED THE DAMAGE.
+(c)	(USA only) SOME STATES DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU. YOU MAY ALSO HAVE OTHER LEGAL RIGHTS THAT VARY FROM STATE TO STATE.
+
+9.  Basis of Bargain
+The Limited Warranty, Exclusive Remedies and Limited Liability set forth above are fundamental elements of this EULA. Snowtide would not be able to provide the Software on an economical basis without such limitations.
+
+10.  U.S. GOVERNMENT RESTRICTED RIGHTS LEGEND
+This Software and the documentation are provided with RESTRICTED RIGHTS.  Use, duplication, or disclosure by the U.S. Government is subject to restrictions as set forth in this EULA and as provided in DFARS 227.7202-1(a) and 227.7202-3(a) (1995),DFARS 252.227-7013 (c)(1)(ii)(OCT 1988), FAR 12.212(a)(1995), FAR 52.227-19, or FAR 52.227-14, as applicable.  Manufacturer: Snowtide Informatics Systems, Inc, 243 King Street, Suite 248, Northampton, MA  01060.
+
+11.  (Outside of the USA) Consumer End Users Only
+The limitations or exclusions of warranties and liability contained in this EULA do not affect or prejudice the statutory rights of a consumer, i.e., a person acquiring goods otherwise than in the course of a business, subject to Section 12.
+
+12.  General Provisions
+This EULA is governed by the laws of the State of Massachusetts, without giving effect to principles of conflict of laws. If the Software is delivered outside the USA, the UN Convention for the International Sale of Goods does not apply to this EULA. This EULA is the full agreement between the parties and supersedes all other agreements or understandings, whether oral or written. All questions about this EULA must be directed to: Snowtide Informatics Systems, Inc, 243 King Street, Suite 248, Northampton, MA  01060, Attention: General Counsel.
+
+13.  Third Party Software
+Certain third party software is incorporated into the Software, as enumerated in Appendix A of this EULA.
+
+Snowtide and PDFTextStream are trademarks or registered trademarks of Snowtide Informatics Systems, Inc. in the United States and/or other countries.  Third party trademarks, trade names, product names and logos may be the trademarks or registered trademarks of their respective owners.
+
+14.	Delivery
+The Software has been delivered to you by internet transmission at the address you registered with Snowtide. If the law of the jurisdiction where the Software was delivered to requires the payment of any sales, use, VAT or other tax on the purchase, use or ownership of the Software, you are responsible for reporting the purchase and paying any such taxes and you agree to indemnify Snowtide from any liability or expense in connection with your failure to do so.
+
+15.	ARBITRATION
+Any action arising out of this EULA, its formation, validity, breach or relating to the subject of this EULA must be filed within one year after the cause of action accrues through the American Arbitration Association under its Commercial Arbitration Rules and the optional rules for emergency measures of protection before one arbitrator who shall be an attorney experienced in trade secret law and matters relating to computer software. All hearings shall be in Northampton, Massachusetts or by telephone or videoconference at the order of the arbitrator. The arbitrator is authorized to issue equitable and legal remedies including preliminary and permanent injunctions. If an action is brought to compel arbitration or enforce the terms of any interim or final order of the arbitrator it may be brought in any court with jurisdiction over the person or property of either party and each party hereby irrevocably agrees to be subject to the jurisdiction of any such court. Any action to compel arbitration or enforce an arbitration order or award shall be governed by the Federal Arbitration Act, this EULA being in interstate commerce. The arbitrator is not empowered to grant damages in any form or amount in excess of the payments required under this EULA. This arbitration provision shall be a complete defense to any suit, action or proceeding. Nothing in this arbitration provision shall give the arbitrator any authority to alter, change, amend, modify, add to or subtract from any provision of this EULA. ALL PARTIES WAIVE ANY RIGHT TO A TRIAL BY JURY.
+
+*Appendix A - Third Party Software*
+
+The following is a list of certain third party software incorporated in the Software; any additional terms and conditions solely associated with such third party software are further indicated:
+
+(a) TIFFFaxDecompressor, Copyright (c) 2005 Sun Microsystems, Inc. All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+- Redistribution of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+- Redistribution in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+Neither the name of Sun Microsystems, Inc. or the names of contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+This software is provided "AS IS," without a warranty of any kind. ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT, ARE HEREBY EXCLUDED. SUN MIDROSYSTEMS, INC. ("SUN") AND ITS LICENSORS SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES. IN NO EVENT WILL SUN OR ITS LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED AND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR INABILITY TO USE THIS SOFTWARE, EVEN IF SUN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+You acknowledge that this software is not designed or intended for use in the design, construction, operation or maintenance of any nuclear facility.
+
+(b) Apache Commons-Logging, Licensed under the Apache License, Version 2.0, available at http://commons.apache.org/license.html
