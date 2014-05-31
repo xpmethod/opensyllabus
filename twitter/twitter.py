@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+
+# 1 0 * * * /mnt/osp-archive-mount/code/twitter/twitter.py
+
 import csv
 from datetime import datetime
 import os
@@ -6,10 +10,8 @@ import tweepy
 import urllib2
 
 #log contains Twitter login creds and timestamp for most recent Tweet collected
-logPath = '/home/jonahsmith/OSP-ARCHIVE/code/twitter/'
-dumpPath = '/home/jonahsmith/OSP-ARCHIVE/document-dump/'
-
-download(search())
+logPath = '/mnt/osp-archive-mount/code/twitter/'
+dumpPath = '/mnt/osp-archive-mount/document-dump/twitter/'
 
 def login():
     try:
@@ -49,7 +51,7 @@ def save(results):
 
 def search():
     api, last = login()
-    results = api.search(q='#syllabus', since_id=last)
+    results = api.search(q='#ospsubmit', since_id=last)
     save(results)    
     #Extract all links and their destinations *after redirects*
     finalurls = []
@@ -99,3 +101,5 @@ def download(finalurls):    #finalurls is a list of URLs to download
                 counter += 1
             with open(dumpPath+date+'/'+filename, 'w') as file:
                 file.write(site.read())
+
+download(search())
