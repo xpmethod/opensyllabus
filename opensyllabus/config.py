@@ -7,18 +7,15 @@ O-Desk: Astrey
 """
 
 
-#DATA_DIR = '/home/qnx/My Work/projects/opensyllabus/'
-#DATA_DIR = '/mnt/osp-archive-mount/document-dump/leipzig'
-#DATA_DIR = '/mnt/osp-archive-mount/document-dump/mikes-collection'
-# DATA_DIR = '/mnt/osp-archive-mount/document-dump/lindas-corpus'
-#DATA_DIR = '/mnt/osp-archive-mount/document-dump/cohen-archive'
 DATA_DIR = '/mnt/osp-archive-mount/document-dump'
+TMP_DIR = '/mnt/osp-archive-mount/document-dump/code/opensyllabus/_tmp'
 
 # MongoDB configurations
 MONGODB_HOST = 'localhost'
 MONGODB_PORT = 27017
 
-PROCESS_REPORT_COUNT = 20000
+PROCESS_REPORT_COUNT = 1000
+THREAD_COUNT = 5
 
 try:
     from opensyllabus.local_config import *
