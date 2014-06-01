@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# -*- coding:utf8 -*-
 """
 Author: Maxim Kosinov
 Specialization: Python, HighLoad Crawlers, Data Mining, Scraping
@@ -21,7 +21,8 @@ from opensyllabus.config import TMP_DIR
 
 class OpenSyllabusOCR(object):
     
-    def __init__(self):
+    def __init__(self, log):
+        self.log = log
         self.ex_txt = ''
 
         
@@ -34,7 +35,7 @@ class OpenSyllabusOCR(object):
         glob_img_filename = self._extract_images(input_pdf)
         if glob_img_filename:
             return self._extract_text(glob_img_filename)
-        return False
+        return None
     
     
     def _delete_tmp_files(self, img_file, txt_file):
@@ -47,7 +48,7 @@ class OpenSyllabusOCR(object):
             try:
                 os.remove(tmp_file)
             except IOError as e:
-                logging.exception(e)        
+                self.log.exception(e)        
     
         
     def _extract_images(self, input_pdf):
@@ -65,7 +66,7 @@ class OpenSyllabusOCR(object):
         try:
             subprocess.check_output(cmd, shell=True)
         except subprocess.CalledProcessError as e:
-            logging.exception(e)
+            self.log.exception(e)
         else:        
             return '%s_*.png' % output_filename
 
@@ -86,13 +87,17 @@ class OpenSyllabusOCR(object):
             try:
                 subprocess.check_output(cmd, shell=True)
             except subprocess.CalledProcessError as e:
-                logging.exception(e)
+                self.log.exception(e)
             else:
                 # add extension to output filename
                 txt_file = '%s.txt' % output_filename
                 
                 # read text from file to buffer
-                with open(txt_file, 'r') as fh:
+                try:
+                    fh = open(txt_file, 'r')
+                except Exception as e:
+                    self.log.exception(e)
+                else: 
                     self.ex_txt += ' %s' % fh.read()
                     
                 # delete tmp files
@@ -100,9 +105,4 @@ class OpenSyllabusOCR(object):
                         
         return self.ex_txt
 
-        
-if __name__ == '__main__':
-    ocr = OpenSyllabusOCR()
-    print ocr.extract('/home/qnx/My Work/projects/opensyllabus/_data/mikes-collection/emory_050000003538.pdf')
-    
     

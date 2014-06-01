@@ -8,7 +8,6 @@ O-Desk: Astrey
 """
 
 import os
-import bson 
 from pymongo import MongoClient, ASCENDING, DESCENDING
 
 from opensyllabus.config import MONGODB_HOST, MONGODB_PORT
@@ -16,30 +15,52 @@ from opensyllabus.config import MONGODB_HOST, MONGODB_PORT
 
 class OpenSyllabusDb(object):
     
-    def __init__(self):
+    def __init__(self, log):
+        self.log = log
         self._init_connection()
     
     def _init_connection(self):
-        # connect to mongodb server
-        self.client = MongoClient(MONGODB_HOST, MONGODB_PORT)
-        # select mongodb database with name denten_crawler
-        self.db = self.client['opensyllabus']
-        # set collection name
-        self.collection = self.db['opensyllabus']
-        
-    def insert_data(self, path, filename, data):
+        """
+        Initilize connection to MongoDB
+        Input: None
+        Output: None
+        """
+        try:
+            # connect to mongodb server
+            self.client = MongoClient(MONGODB_HOST, MONGODB_PORT)
+            # select mongodb database with name denten_crawler
+            self.db = self.client['opensyllabus']
+            # set collection name
+            self.collection = self.db['opensyllabus']
+        except Exception as e:
+            self.log.exception(e)
+            
+            
+    def insert_data(self, path, filename, text):
+        """
+        Insert extracted text to db
+        Input: path - full path to file
+               filename - data file name
+               text - extracted text
+        Output: None
+        """
         mongo_item = {
             'path': path,
             'filename': filename,
-            'data': data,
+            'text': text,
         }
-        # insert data to collection
-        self.collection.insert(mongo_item)
+        try:
+            # insert data to collection
+            self.collection.insert(mongo_item)
+        except Exception as e:
+            self.log.exception(e)
               
         
     def is_new(self, filepath):
         """
-        Return True if data file is new, otherwise return False
+        Check file for exists in db
+        Input: full path to data file
+        Output: return True if file doesn't exist in db, otherwise return False
         """
         if not self.collection.find({'path': filepath}).count():
             return True
