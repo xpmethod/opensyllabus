@@ -7,7 +7,8 @@ class PDFBox:
         self.txt_file = txt_file
 
     def extract(self):
-        command = 'java -jar pdfbox-app-1.8.5.jar ExtractText ' + self.pdf_file + ' ' + self.txt_file
+        # need to hardcode path because of imports
+        command = 'java -jar ~/workspace/OSP/opensyllabus/extractor_research/extractors/pdfbox-app-1.8.5.jar ExtractText ' + self.pdf_file + ' ' + self.txt_file
         os.system(command)
 
 if __name__ == '__main__': 
