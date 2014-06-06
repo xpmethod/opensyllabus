@@ -1,4 +1,4 @@
-### Code License
+Code License
 
 This code is released under the [GPL], version 2 or later:
 
@@ -22,6 +22,9 @@ GPL can be found in `/usr/share/common-licenses/GPL`.
 
 [GPL]: http://www.gnu.org/copyleft/gpl.html
 
-### Documentation License
+Documentation License
 
-All documentation contained in this repository is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. For details, please see the license file located in this directory (./cc-by-nc-sa-3.0.md) or visit [the link](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US).
+All documentation contained in this repository is licensed under a 
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. 
+For details, please see the license file located in this directory (./cc-by-nc-sa-3.0.md) or 
+visit [the link](http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US).
