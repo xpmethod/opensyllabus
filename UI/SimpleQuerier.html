@@ -19,7 +19,9 @@
 
 	function queryOSPRESTAPI() {
 
-		var url = 'http://IP:PORT/opensyllabus/opensyllabus/_find'
+		var baseUrl = $("#baseUrlInput").val();
+
+		var url = baseUrl
 		          + "?criteriaTextArea=" + encodeURIComponent( $("#criteriaTextArea").val() )
 		          + "&fieldsTextArea=" + encodeURIComponent( $("#fieldsTextArea").val() )
 		          + "&sortTextArea=" + encodeURIComponent( $("#sortTextArea").val() )
@@ -56,9 +58,11 @@
 TODO:  Provide help about and examples for what goes into these fields.
 <table>
 
-<tr><td>Username</td><td><input id="usernameInput" type="text"></td></tr>
+<tr><td>Base URL</td><td><input id="baseUrlInput" type="text" size="100" value='http://IP:PORT/opensyllabus/opensyllabus/_find'></td></tr>
 
-<tr><td>Password</td><td><input id="passwordInput" type="text"></td></tr>
+<tr><td>Username</td><td><input id="usernameInput" type="text" size="100"></td></tr>
+
+<tr><td>Password</td><td><input id="passwordInput" type="text" size="100"></td></tr>
 
 <tr><td>criteria=search_criteria (object)</td><td><textarea id="criteriaTextArea" rows="10" cols="100"></textarea></td></tr>
 
