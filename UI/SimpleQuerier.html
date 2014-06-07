@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+  This is a simple page for querying Open Syllabus Project through its REST API.
+  API documentation is at:  https://github.com/dhcolumbia/opensyllabus/wiki/REST-API
+  Use at your own risk and for any purpose you want.
+  All copyright is disclaimed for this simple file.  
+  Jon Freed, 2014
+  http://www.linkedin.com/in/jonfreed
+-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Simple Page for Querying Open Syllabus Project REST API</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript">
+
+	// Prevent errors for browsers that don't support the console.log function
+	if (!window.console) console = {log: function() {}}; 
+
+	function queryOSPRESTAPI() {
+
+		var url = 'http://IP:PORT/opensyllabus/opensyllabus/_find'
+		          + "?criteriaTextArea=" + encodeURIComponent( $("#criteriaTextArea").val() )
+		          + "&fieldsTextArea=" + encodeURIComponent( $("#fieldsTextArea").val() )
+		          + "&sortTextArea=" + encodeURIComponent( $("#sortTextArea").val() )
+		          + "&skipInput=" + encodeURIComponent( $("#skipInput").val() )
+		          + "&limitInput=" + encodeURIComponent( $("#limitInput").val() )
+		          + "&passwordInput=" + encodeURIComponent( $("#passwordInput").val() )
+		          + "&batch_sizeInput=" + encodeURIComponent( $("#batch_sizeInput").val() );
+
+
+		console.log("url = " + url);
+		$("#constructedURL").val(url);
+
+		$.getJSON({
+			'url': url
+			,'beforeSend': function(xhr) {
+				//May need to use "Authorization" instead
+				xhr.setRequestHeader("Authentication",
+				                     "Basic " + encodeBase64( $("#usernameInput").val() + ":" + $("#passwordInput").val() ) )
+			}
+		}).always(
+			function(data) {
+				// make the data pretty for display
+				data = JSON.stringify(data,null,4)
+				$("#divForQueryResults").html("<pre>" + data + "</pre>");
+			}
+		);
+	}
+</script>
+</head>
+<body>
+
+<h1>Simple Page for querying Open Syllabus Project <a href="https://github.com/dhcolumbia/opensyllabus/wiki/REST-API">REST API</a></h1>
+<br/>
+
+<table>
+
+<tr><td>Username</td><td><input id="usernameInput" type="text"></td></tr>
+
+<tr><td>Password</td><td><input id="passwordInput" type="text"></td></tr>
+
+<tr><td>criteria=search_criteria (object)</td><td><textarea id="criteriaTextArea" rows="10" cols="100"></textarea></td></tr>
+
+<tr><td>fields=fields_to_return (object)</td><td><textarea id="fieldsTextArea" rows="10" cols="100"></textarea></td></tr>
+
+<tr><td>sort=sort_fields (object)</td><td><textarea id="sortTextArea" rows="5" cols="100"></textarea></td></tr>
+
+<tr><td>skip=num (number)</td><td><input id="skipInput" type="text" value="0"></td></tr>
+
+<tr><td>limit=num (number)</td><td><input id="limitInput" type="text" value="5"></td></tr>
+
+<tr><td>explain=true</td><td><input id="passwordInput" type="text" value="true"></td></tr>
+
+<tr><td>batch_size=num_to_return (number)</td><td><input id="batch_sizeInput" type="text" value="5"></td></tr>
+
+
+</table>
+
+<button onclick="queryOSPRESTAPI()">Query</button>
+<hr/>
+Constructed URL for query:  <textarea id="constructedURL" rows="1" cols="100"></textarea>
+<hr/>
+<div id="divForQueryResults"></div>
+</body>
+</html>
