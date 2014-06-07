@@ -11,6 +11,14 @@
 -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>Simple Page for Querying Open Syllabus Project REST API</title>
+<style>
+	
+.tableApiComponents  {border-collapse:collapse;border-spacing:0;border-color:#999;}
+.tableApiComponents th{text-align:left;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
+.tableApiComponents td{vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
+
+	
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script type="text/javascript">
 
@@ -61,36 +69,60 @@
 
 <h1>Simple Page for querying Open Syllabus Project <a href="https://github.com/dhcolumbia/opensyllabus/wiki/REST-API">REST API</a></h1>
 <br/>
-TODO:  Provide help about and examples for what goes into these fields.
-<table>
-
-<tr><td>Base URL</td><td><input id="baseUrlInput" type="text" size="100" onchange="onUrlComponentChange()"
-                                value='http://IP:PORT/opensyllabus/opensyllabus/_find'></td></tr>
-
-<tr><td>Username</td><td><input id="usernameInput" type="text" size="100" onchange="onUrlComponentChange()"></td></tr>
-
-<tr><td>Password</td><td><input id="passwordInput" type="text" size="100" onchange="onUrlComponentChange()"></td></tr>
-
-<tr><td>criteria=search_criteria (object)</td><td><textarea id="criteriaTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td></tr>
-
-<tr><td>fields=fields_to_return (object)</td><td><textarea id="fieldsTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td></tr>
-
-<tr><td>sort=sort_fields (object)</td><td><textarea id="sortTextArea" rows="5" cols="100" onchange="onUrlComponentChange()"></textarea></td></tr>
-
-<tr><td>skip=num (number)</td><td><input id="skipInput" type="text" value="0" onchange="onUrlComponentChange()"></td></tr>
-
-<tr><td>limit=num (number)</td><td><input id="limitInput" type="text" value="5" onchange="onUrlComponentChange()"></td></tr>
-
-<tr><td>explain=true</td><td><input id="explainInput" type="text" value="true" onchange="onUrlComponentChange()"></td></tr>
-
-<tr><td>batch_size=num_to_return (number)</td><td><input id="batch_sizeInput" type="text" value="5" onchange="onUrlComponentChange()"></td></tr>
-
+<table class="tableApiComponents">
+<tr>
+	<th>API Field</th>
+	<th>Value</th>
+	<th>Helpful Information</th>
+</tr><tr>
+	<td>Base URL</td>
+	<td><input id="baseUrlInput" type="text" size="100" onchange="onUrlComponentChange()"
+	           value='http://IP:PORT/opensyllabus/opensyllabus/_find'></td>
+	<td></td>
+</tr><tr>
+	<td>Username</td>
+	<td><input id="usernameInput" type="text" size="100" onchange="onUrlComponentChange()"></td>
+	<td></td>
+</tr><tr>
+	<td>Password</td>
+	<td><input id="passwordInput" type="text" size="100" onchange="onUrlComponentChange()"></td>
+	<td></td>
+</tr><tr>
+	<td>criteria</td>
+	<td><textarea id="criteriaTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td>
+	<td>search criteria (JSON object)</td>
+</tr><tr>
+	<td>fields</td>
+	<td><textarea id="fieldsTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td>
+	<td>fields to return (JSON object)</td>
+</tr><tr>
+	<td>sort</td>
+	<td><textarea id="sortTextArea" rows="5" cols="100" onchange="onUrlComponentChange()"></textarea></td>
+	<td>sort fields (JSON object)</td>
+</tr><tr>
+	<td>skip</td>
+	<td><input id="skipInput" type="text" value="0" onchange="onUrlComponentChange()"></td>
+	<td>number</td>
+</tr><tr>
+	<td>limit</td>
+	<td><input id="limitInput" type="text" value="5" onchange="onUrlComponentChange()"></td>
+	<td>number</td>
+</tr><tr>
+	<td>explain</td>
+	<td><input id="explainInput" type="text" value="true" onchange="onUrlComponentChange()"></td>
+	<td></td>
+</tr><tr>
+	<td>batch_size</td>
+	<td><input id="batch_sizeInput" type="text" value="5" onchange="onUrlComponentChange()"></td>
+	<td>number to return</td>
+</tr><tr>
+	<td>Constructed URL for query</td>
+	<td><textarea id="constructedURL" rows="3" cols="100"></textarea></td>
+	<td></td>
+</tr>
 </table>
-
+<br/>
 <button onclick="queryOSPRESTAPI()">Query</button>
-<hr/>
-Constructed URL for query:<br/>
-<textarea id="constructedURL" rows="3" cols="100"></textarea>
 <hr/>
 Query Results:<br/>
 <div id="divForQueryResults"></div>
