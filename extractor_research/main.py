@@ -63,7 +63,7 @@ def time_all(pdf_file, txt_file):
         stream = StringIO.StringIO()
         stats = pstats.Stats(temp, stream=stream)
         stats.print_stats()
-        output = output + method + '\n' + stream.getvalue()
+        output = output + method + '\n-----------------------------------\n' + stream.getvalue()
 
     print output
 
