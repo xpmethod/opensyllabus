@@ -41,7 +41,7 @@
 	function queryOSPRESTAPI() {
 
 		$.getJSON({
-			'url': $("#constructedURL").val(url)
+			'url': $("#constructedURL").val()
 			,'beforeSend': function(xhr) {
 				//May need to use "Authorization" instead
 				xhr.setRequestHeader("Authentication",
