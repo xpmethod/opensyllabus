@@ -18,6 +18,10 @@
 	if (!window.console) console = {log: function() {}}; 
 
 
+	$(document).ready(function(){
+		onUrlComponentChange();
+	}); 
+
 	function onUrlComponentChange() {
 	
 		var baseUrl = $("#baseUrlInput").val();
