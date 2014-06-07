@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- 
+  This is a simple page for querying Open Syllabus Project through its REST API.
+  API documentation is at:  https://github.com/dhcolumbia/opensyllabus/wiki/REST-API
+  Use at your own risk and for any purpose you want.
+  All copyright is disclaimed for this simple file.  
+  Jon Freed, 2014
+  http://www.linkedin.com/in/jonfreed
+-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Simple Page for Querying Open Syllabus Project REST API</title>
+<style>
+	
+.tableApiComponents  {border-collapse:collapse;border-spacing:0;border-color:#999;}
+.tableApiComponents th{text-align:left;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
+.tableApiComponents td{vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
+
+	
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript">
+
+	// Prevent errors for browsers that don't support the console.log function
+	if (!window.console) console = {log: function() {}}; 
+
+	$(document).ready(function(){
+		onUrlComponentChange();
+	}); 
+
+	function onUrlComponentChange() {
+	
+		var baseUrl = $("#baseUrlInput").val();
+
+		var url = baseUrl
+		          + "?criteriaTextArea=" + encodeURIComponent( $("#criteriaTextArea").val() )
+		          + "&fieldsTextArea=" + encodeURIComponent( $("#fieldsTextArea").val() )
+		          + "&sortTextArea=" + encodeURIComponent( $("#sortTextArea").val() )
+		          + "&skipInput=" + encodeURIComponent( $("#skipInput").val() )
+		          + "&limitInput=" + encodeURIComponent( $("#limitInput").val() )
+		          + "&explainInput=" + encodeURIComponent( $("#explainInput").val() )
+		          + "&batch_sizeInput=" + encodeURIComponent( $("#batch_sizeInput").val() );
+
+		console.log("url = " + url);
+		$("#constructedURL").val(url);
+	}
+
+	function queryOSPRESTAPI() {
+
+		$.getJSON({
+			'url': $("#constructedURL").val()
+			,'beforeSend': function(xhr) {
+				//May need to use "Authorization" instead
+				xhr.setRequestHeader("Authentication",
+				                     "Basic " + encodeBase64( $("#usernameInput").val() + ":" + $("#passwordInput").val() ) )
+			}
+		}).always(
+			function(data) {
+				// make the data pretty for display
+				data = JSON.stringify(data,null,4)
+				$("#divForQueryResults").html("<pre>" + data + "</pre>");
+			}
+		);
+	}
+</script>
+</head>
+<body>
+
+<h1>Simple Page for querying Open Syllabus Project <a href="https://github.com/dhcolumbia/opensyllabus/wiki/REST-API">REST API</a></h1>
+<br/>
+<table class="tableApiComponents">
+<tr>
+	<th>API Field</th>
+	<th>Value</th>
+	<th>Helpful Information</th>
+</tr><tr>
+	<td>Base URL</td>
+	<td><input id="baseUrlInput" type="text" size="100" onchange="onUrlComponentChange()"
+	           value='http://IP:PORT/opensyllabus/opensyllabus/_find'></td>
+	<td></td>
+</tr><tr>
+	<td>Username</td>
+	<td><input id="usernameInput" type="text" size="100" onchange="onUrlComponentChange()"></td>
+	<td></td>
+</tr><tr>
+	<td>Password</td>
+	<td><input id="passwordInput" type="text" size="100" onchange="onUrlComponentChange()"></td>
+	<td></td>
+</tr><tr>
+	<td>criteria</td>
+	<td><textarea id="criteriaTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td>
+	<td>search criteria (JSON object)</td>
+</tr><tr>
+	<td>fields</td>
+	<td><textarea id="fieldsTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td>
+	<td>fields to return (JSON object)</td>
+</tr><tr>
+	<td>sort</td>
+	<td><textarea id="sortTextArea" rows="5" cols="100" onchange="onUrlComponentChange()"></textarea></td>
+	<td>sort fields (JSON object)</td>
+</tr><tr>
+	<td>skip</td>
+	<td><input id="skipInput" type="text" value="0" onchange="onUrlComponentChange()"></td>
+	<td>number</td>
+</tr><tr>
+	<td>limit</td>
+	<td><input id="limitInput" type="text" value="5" onchange="onUrlComponentChange()"></td>
+	<td>number</td>
+</tr><tr>
+	<td>explain</td>
+	<td><input id="explainInput" type="text" value="true" onchange="onUrlComponentChange()"></td>
+	<td></td>
+</tr><tr>
+	<td>batch_size</td>
+	<td><input id="batch_sizeInput" type="text" value="5" onchange="onUrlComponentChange()"></td>
+	<td>number to return</td>
+</tr><tr>
+	<td>Constructed URL for query</td>
+	<td><textarea id="constructedURL" rows="3" cols="100"></textarea></td>
+	<td></td>
+</tr>
+</table>
+<br/>
+<button onclick="queryOSPRESTAPI()">Query</button>
+<hr/>
+Query Results:<br/>
+<div id="divForQueryResults"></div>
+</body>
+</html>
