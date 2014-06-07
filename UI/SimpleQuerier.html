@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <!-- 
   This is a simple page for querying Open Syllabus Project through its REST API.
@@ -31,7 +31,7 @@
 		          + "&sortTextArea=" + encodeURIComponent( $("#sortTextArea").val() )
 		          + "&skipInput=" + encodeURIComponent( $("#skipInput").val() )
 		          + "&limitInput=" + encodeURIComponent( $("#limitInput").val() )
-		          + "&passwordInput=" + encodeURIComponent( $("#passwordInput").val() )
+		          + "&explainInput=" + encodeURIComponent( $("#explainInput").val() )
 		          + "&batch_sizeInput=" + encodeURIComponent( $("#batch_sizeInput").val() );
 
 		console.log("url = " + url);
@@ -81,7 +81,7 @@ TODO:  Provide help about and examples for what goes into these fields.
 
 <tr><td>limit=num (number)</td><td><input id="limitInput" type="text" value="5" onchange="onUrlComponentChange()"></td></tr>
 
-<tr><td>explain=true</td><td><input id="passwordInput" type="text" value="true" onchange="onUrlComponentChange()"></td></tr>
+<tr><td>explain=true</td><td><input id="explainInput" type="text" value="true" onchange="onUrlComponentChange()"></td></tr>
 
 <tr><td>batch_size=num_to_return (number)</td><td><input id="batch_sizeInput" type="text" value="5" onchange="onUrlComponentChange()"></td></tr>
 
