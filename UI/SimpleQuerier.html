@@ -17,8 +17,9 @@
 	// Prevent errors for browsers that don't support the console.log function
 	if (!window.console) console = {log: function() {}}; 
 
-	function queryOSPRESTAPI() {
 
+	function onUrlComponentChange() {
+	
 		var baseUrl = $("#baseUrlInput").val();
 
 		var url = baseUrl
@@ -30,14 +31,14 @@
 		          + "&passwordInput=" + encodeURIComponent( $("#passwordInput").val() )
 		          + "&batch_sizeInput=" + encodeURIComponent( $("#batch_sizeInput").val() );
 
-
 		console.log("url = " + url);
-		$("#constructedURL").removeAttr("readonly");
 		$("#constructedURL").val(url);
-		$("#constructedURL").attr("readonly","readonly");
+	}
+
+	function queryOSPRESTAPI() {
 
 		$.getJSON({
-			'url': url
+			'url': $("#constructedURL").val(url)
 			,'beforeSend': function(xhr) {
 				//May need to use "Authorization" instead
 				xhr.setRequestHeader("Authentication",
@@ -60,26 +61,26 @@
 TODO:  Provide help about and examples for what goes into these fields.
 <table>
 
-<tr><td>Base URL</td><td><input id="baseUrlInput" type="text" size="100" value='http://IP:PORT/opensyllabus/opensyllabus/_find'></td></tr>
+<tr><td>Base URL</td><td><input id="baseUrlInput" type="text" size="100" onchange="onUrlComponentChange()"
+                                value='http://IP:PORT/opensyllabus/opensyllabus/_find'></td></tr>
 
-<tr><td>Username</td><td><input id="usernameInput" type="text" size="100"></td></tr>
+<tr><td>Username</td><td><input id="usernameInput" type="text" size="100" onchange="onUrlComponentChange()"></td></tr>
 
-<tr><td>Password</td><td><input id="passwordInput" type="text" size="100"></td></tr>
+<tr><td>Password</td><td><input id="passwordInput" type="text" size="100" onchange="onUrlComponentChange()"></td></tr>
 
-<tr><td>criteria=search_criteria (object)</td><td><textarea id="criteriaTextArea" rows="10" cols="100"></textarea></td></tr>
+<tr><td>criteria=search_criteria (object)</td><td><textarea id="criteriaTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td></tr>
 
-<tr><td>fields=fields_to_return (object)</td><td><textarea id="fieldsTextArea" rows="10" cols="100"></textarea></td></tr>
+<tr><td>fields=fields_to_return (object)</td><td><textarea id="fieldsTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td></tr>
 
-<tr><td>sort=sort_fields (object)</td><td><textarea id="sortTextArea" rows="5" cols="100"></textarea></td></tr>
+<tr><td>sort=sort_fields (object)</td><td><textarea id="sortTextArea" rows="5" cols="100" onchange="onUrlComponentChange()"></textarea></td></tr>
 
-<tr><td>skip=num (number)</td><td><input id="skipInput" type="text" value="0"></td></tr>
+<tr><td>skip=num (number)</td><td><input id="skipInput" type="text" value="0" onchange="onUrlComponentChange()"></td></tr>
 
-<tr><td>limit=num (number)</td><td><input id="limitInput" type="text" value="5"></td></tr>
+<tr><td>limit=num (number)</td><td><input id="limitInput" type="text" value="5" onchange="onUrlComponentChange()"></td></tr>
 
-<tr><td>explain=true</td><td><input id="passwordInput" type="text" value="true"></td></tr>
+<tr><td>explain=true</td><td><input id="passwordInput" type="text" value="true" onchange="onUrlComponentChange()"></td></tr>
 
-<tr><td>batch_size=num_to_return (number)</td><td><input id="batch_sizeInput" type="text" value="5"></td></tr>
-
+<tr><td>batch_size=num_to_return (number)</td><td><input id="batch_sizeInput" type="text" value="5" onchange="onUrlComponentChange()"></td></tr>
 
 </table>
 
