@@ -32,7 +32,9 @@
 
 
 		console.log("url = " + url);
+		$("#constructedURL").removeAttr("readonly");
 		$("#constructedURL").val(url);
+		$("#constructedURL").attr("readonly","readonly");
 
 		$.getJSON({
 			'url': url
