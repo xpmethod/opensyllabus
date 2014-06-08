@@ -1,11 +1,11 @@
 #!/usr/bin/python
 from pdfminer.layout import LAParams
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.converter import TextConverter
+from pdfminer.converter import TextConverter, HTMLConverter, XMLConverter
 from pdfminer.pdfpage import PDFPage
 
 class Miner:
-    def __init__(self, pdf_file, txt_file, layout_analysis=True):
+    def __init__(self, pdf_file, txt_file, file_format='txt', layout_analysis=True):
         self.pdf_file = file(pdf_file, 'rb')
         self.outfp = file(txt_file, 'w')
 
@@ -15,8 +15,16 @@ class Miner:
             laparams = None
 
         self.rsrcmgr = PDFResourceManager(caching=True)
-        self.device = TextConverter(self.rsrcmgr, self.outfp, codec='utf-8', 
-            laparams=laparams, imagewriter=None)
+        
+        if file_format == 'txt':
+            self.device = TextConverter(self.rsrcmgr, self.outfp, codec='utf-8', 
+                laparams=laparams, imagewriter=None)
+        elif file_format == 'html':
+            self.device = HTMLConverter(self.rsrcmgr, self.outfp, codec='utf-8', 
+                laparams=laparams, imagewriter=None)
+        elif file_format == 'xml':
+            self.device = XMLConverter(self.rsrcmgr, self.outfp, codec='utf-8', 
+                laparams=laparams, imagewriter=None)
 
     def extract(self):
         interpreter = PDFPageInterpreter(self.rsrcmgr, self.device)
@@ -28,6 +36,16 @@ class Miner:
         self.device.close()
         self.outfp.close()
 
-if __name__ == '__main__': 
-    miner = Miner('../input/pride_and_prej/1.pdf', '../output/pride_and_prej/miner/1.txt')
-    miner.extract()
+if __name__ == '__main__':
+    import os
+    import re
+    
+    #converts pdfs in the input directory into html format
+    pdfList = [('../input/%s' % f) for f in os.listdir('../input/') if '.pdf' in f]
+    htmlList = [re.sub(r'.pdf', r'.xml', f) for f in pdfList]
+    htmlList = [re.sub(r'input', r'output', f) for f in htmlList]
+    
+    for i in range(len(pdfList)):
+        print 'converting: %s to %s' % (pdfList[i], htmlList[i])
+        miner = Miner(pdfList[i], htmlList[i], file_format='xml')
+        miner.extract()
