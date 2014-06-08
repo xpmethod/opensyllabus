@@ -3,10 +3,15 @@
 '''
 https://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
 (use with a second file option)
+http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
+normal sort + token sort (seems less accurate)
 '''
 
 from extractors import miner, pdf2, pdfbox, textstream, xpdf
 import cProfile
+import pstats
+import StringIO
+
 
 def miner_with_layout(pdf_file, txt_file):
     pdf = miner.Miner(pdf_file, txt_file)
@@ -46,13 +51,22 @@ def run_all(pdf_file, txt_file):
     pdfbox_default(pdf_file, txt_file)
 
 def time_all(pdf_file, txt_file):
-    cProfile.run('miner_with_layout(pdf_file, txt_file)')
-    cProfile.run('miner_without_layout(pdf_file, txt_file)')
-    cProfile.run('xpdf_with_layout(pdf_file, txt_file)')
-    cProfile.run('xpdf_without_layout(pdf_file, txt_file)')
-    cProfile.run('textstream_default(pdf_file, txt_file)')
-    cProfile.run('pdf2_default(pdf_file, txt_file)')
-    cProfile.run('pdfbox_default(pdf_file, txt_file)')
+    methods = ['miner_with_layout', 'miner_without_layout', 'xpdf_with_layout', 
+    'xpdf_without_layout', 'textstream_default', 'pdf2_default', 'pdfbox_default']
+
+    output = ''
+    for method in methods:
+        command = method + '(pdf_file, txt_file)'
+        temp = 'statsfile'
+        cProfile.run(command, temp)
+
+        stream = StringIO.StringIO()
+        stats = pstats.Stats(temp, stream=stream)
+        stats.print_stats()
+        stats.sort_stats('time')
+        output = output + method + '\n-------------------------------------\n' + stream.getvalue()
+
+    print output
 
 if __name__ == '__main__': 
     pdf_file = './input/pride_and_prej/1.pdf'
