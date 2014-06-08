@@ -12,12 +12,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>Simple Page for Querying Open Syllabus Project REST API</title>
 <style>
-	
-.tableApiComponents  {border-collapse:collapse;border-spacing:0;border-color:#999;}
-.tableApiComponents th{text-align:left;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
-.tableApiComponents td{vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
+	.tableApiParameters {border-collapse:collapse;border-spacing:0;border-color:#999;}
+	.tableApiParameters th{text-align:left;font-weight:bold;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
+	.tableApiParameters td{vertical-align:top;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
 
-	
+	.tableResultsHeader {border-collapse:collapse;border-spacing:0;border-color:#999;width:100%;}
+	.tableResultsHeader th{text-align:left;font-weight:bold;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#999;color:#fff;background-color:#26ADE4;}
+
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script type="text/javascript">
@@ -47,7 +48,8 @@
 	}
 
 	function queryOSPRESTAPI() {
-
+		$("#executeQueryBtn").attr("disabled","true");
+		$("#executeQueryBtn").html("Querying... (please wait)");
 		$.getJSON({
 			'url': $("#constructedURL").val()
 			,'beforeSend': function(xhr) {
@@ -60,6 +62,8 @@
 				// make the data pretty for display
 				data = JSON.stringify(data,null,4)
 				$("#divForQueryResults").html("<pre>" + data + "</pre>");
+				$("#executeQueryBtn").removeAttr("disabled");
+				$("#executeQueryBtn").html("Query");
 			}
 		);
 	}
@@ -68,37 +72,40 @@
 <body>
 
 <h1>Simple Page for querying Open Syllabus Project <a href="https://github.com/dhcolumbia/opensyllabus/wiki/REST-API">REST API</a></h1>
-<br/>
-<table class="tableApiComponents">
+<p>
+	Instructions:  (1) specify parameter values, (2) click the Query button, (3) scroll down to review the results.
+</p>
+<p>
+<table class="tableApiParameters">
 <tr>
-	<th>API Field</th>
-	<th>Value</th>
-	<th>Helpful Information</th>
+	<th>Parameter Name</th>
+	<th>Parameter Value</th>
+	<th>Parameter Information</th>
 </tr><tr>
 	<td>Base URL</td>
-	<td><input id="baseUrlInput" type="text" size="100" onchange="onUrlComponentChange()"
+	<td><input id="baseUrlInput" type="text" size="80" onchange="onUrlComponentChange()"
 	           value='http://IP:PORT/opensyllabus/opensyllabus/_find'></td>
-	<td></td>
+	<td>The URL for querying the Open Syllabus Project MongoDb.  (Get this from the OSP.)</td>
 </tr><tr>
 	<td>Username</td>
-	<td><input id="usernameInput" type="text" size="100" onchange="onUrlComponentChange()"></td>
-	<td></td>
+	<td><input id="usernameInput" type="text" size="80" onchange="onUrlComponentChange()"></td>
+	<td>Your username.  (Get this from the OSP.)</td>
 </tr><tr>
 	<td>Password</td>
-	<td><input id="passwordInput" type="text" size="100" onchange="onUrlComponentChange()"></td>
-	<td></td>
+	<td><input id="passwordInput" type="text" size="80" onchange="onUrlComponentChange()"></td>
+	<td>Your password.  (Get this from the OSP.)</td>
 </tr><tr>
 	<td>criteria</td>
-	<td><textarea id="criteriaTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td>
-	<td>search criteria (JSON object)</td>
+	<td><textarea id="criteriaTextArea" rows="8" cols="60" onchange="onUrlComponentChange()"></textarea></td>
+	<td>Search criteria, formatted as a JSON object.</td>
 </tr><tr>
 	<td>fields</td>
-	<td><textarea id="fieldsTextArea" rows="10" cols="100" onchange="onUrlComponentChange()"></textarea></td>
-	<td>fields to return (JSON object)</td>
+	<td><textarea id="fieldsTextArea" rows="8" cols="60" onchange="onUrlComponentChange()"></textarea></td>
+	<td>Names of fields, formatted into a JSON object, that you want in the results.</td>
 </tr><tr>
 	<td>sort</td>
-	<td><textarea id="sortTextArea" rows="5" cols="100" onchange="onUrlComponentChange()"></textarea></td>
-	<td>sort fields (JSON object)</td>
+	<td><textarea id="sortTextArea" rows="5" cols="60" onchange="onUrlComponentChange()"></textarea></td>
+	<td>Names of fields, formatted into a JSON object, by which you want the results to be sorted.</td>
 </tr><tr>
 	<td>skip</td>
 	<td><input id="skipInput" type="text" value="0" onchange="onUrlComponentChange()"></td>
@@ -117,14 +124,26 @@
 	<td>number to return</td>
 </tr><tr>
 	<td>Constructed URL for query</td>
-	<td><textarea id="constructedURL" rows="3" cols="100"></textarea></td>
-	<td></td>
+	<td><textarea id="constructedURL" rows="3" cols="60"></textarea></td>
+	<td>You do not need to edit this because it is dynamically constructed from the preceding 
+	parameter values you provide.  However, if desired, you can skip providing parameter values 
+	other than base URL, username, and password and provide your own constructed URL directly.
+	</td>
 </tr>
 </table>
-<br/>
-<button onclick="queryOSPRESTAPI()">Query</button>
-<hr/>
-Query Results:<br/>
-<div id="divForQueryResults"></div>
+</p>
+<p>
+	<button id="executeQueryBtn" onclick="queryOSPRESTAPI()">Query</button>
+</p>
+<p>
+	<table class="tableResultsHeader">
+	<tr>
+		<th>Query Results</th>
+	</tr>
+	</table>
+</p>
+<p>
+	<div id="divForQueryResults"></div>
+</p>
 </body>
 </html>
