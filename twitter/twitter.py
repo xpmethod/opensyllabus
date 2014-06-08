@@ -105,8 +105,7 @@ def download(finalurls):    #finalurls is a list of URLs to download
                 write = 2
         except Exception:
             print "Unable to get file size."
-            write = 2
-                
+
         #Avoid overwriting files named same thing.
         counter = 1
         rawfilename = filename
