@@ -2,7 +2,7 @@
 import os
 
 class XPDF:
-    def __init__(self, pdf_file, txt_file, layout=False):
+    def __init__(self, pdf_file, txt_file, layout=True):
         self.pdf_file = pdf_file
         self.txt_file = txt_file
         # -layout : maintain original physical layout
