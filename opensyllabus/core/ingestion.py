@@ -19,7 +19,7 @@ from time import time
 from opensyllabus.core.mongo import OpenSyllabusDb
 from opensyllabus.core.extractor import TextExtractor
 from opensyllabus.config import PROCESS_REPORT_COUNT
-from opensyllabus.core.utils import get_data_files, get_file_ext
+from opensyllabus.core.utils import get_data_files, get_file_ext, get_file_type
 
 
 class StatCounter(object):
@@ -129,11 +129,12 @@ class Ingester(threading.Thread):
             #--
             if ext and (ext in self.extractor.__class__.__dict__) and self.db.is_new(data_file):
                 self.counter.inc_ing()
-                data = getattr(self.extractor, ext)(data_file)
+                file_type = get_file_type(data_file)
+                data = getattr(self.extractor, file_type or ext)(data_file)
                 self.db.insert_data(data_file, os.path.split(data_file)[1], data)
             else:
                 if not ext:
-                    self.counter.inc_wrang()
+                    self.counter.inc_wrong()
                 elif ext not in self.extractor.__class__.__dict__:
                     self.counter.inc_unsupp()
                 else:

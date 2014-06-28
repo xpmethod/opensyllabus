@@ -13,8 +13,6 @@ import sys
 import time
 import Queue
 import logging
-from logging.handlers import RotatingFileHandler
-from logging import StreamHandler, FileHandler, Formatter
 from pymongo.errors import OperationFailure, AutoReconnect, DuplicateKeyError
 from optparse import OptionParser, OptionGroup
 
@@ -24,41 +22,14 @@ sys.path.insert(0, os.path.join(os.path.split(sys.path[0])[0]))
 # so now we can import opensyllabus package
 # from opensyllabus.core.extractor import DataExtractor
 # from opensyllabus.core.mongo import OpenSyllabusDb
-from opensyllabus.config import DATA_DIR, LOG_FILE, FILE_LOG_VERBOSITY, \
+from opensyllabus.config import DATA_DIR, INGESTION_LOG_FILE, FILE_LOG_VERBOSITY, \
                                 CONSOLE_LOG_VERBOSITY, THREADS_COUNT, LOG_TO_FILE
                                 
 from opensyllabus.core.ingestion import Ingester, StatCounter
-from opensyllabus.core.utils import get_data_files, get_file_ext
+from opensyllabus.core.utils import get_data_files, get_file_ext, configure_loggers, log_levels
+
 
 log = logging.getLogger(__name__)
-log_levels = {
-    'debug': logging.DEBUG, 
-    'info': logging.INFO, 
-    'warning': logging.WARNING, 
-    'error': logging.ERROR
-}
-
-
-def configure_loggers(verbosity, log_file, log_verbosity):
-    LOGFMT_CONSOLE = ('[%(asctime)s] %(name)-10s %(levelname)-7s in %(module)s.%(funcName)s(),'
-                      ' line %(lineno)d\n\t%(message)s')
-    
-    LOGFMT_FILE = ('[%(asctime)s] [%(process)d]%(name)-10s %(levelname)-7s in %(module)s.%(funcName)s(),'
-                   ' line %(lineno)d\n\t%(message)s')
-
-    # Configure root logger to log to stdout
-    logging.basicConfig(level=verbosity, datefmt='%H:%M:%S', format=LOGFMT_CONSOLE)
-    
-    # Configure main logger to rotate log files
-    rh = RotatingFileHandler(log_file, maxBytes=2000000, backupCount=25)
-    log.addHandler(rh)
-
-    # Configure main logger to log to a file
-    if log_file:
-        fh = FileHandler(log_file, 'w')
-        fh.setFormatter(Formatter(LOGFMT_FILE, '%Y-%m-%d %H:%M:%S'))
-        fh.setLevel(log_verbosity)
-        log.addHandler(fh)
 
 
 if __name__ == '__main__':
@@ -98,16 +69,17 @@ if __name__ == '__main__':
     options, args = parser.parse_args()
     
     if LOG_TO_FILE and not options.log_file:
-        options.log_file =  LOG_FILE
+        options.log_file =  INGESTION_LOG_FILE
     
     if len(args) < 1:
         data_dir = DATA_DIR
     else:
         data_dir = args[1]
         
-    configure_loggers(log_levels[options.verbosity], 
-                      options.log_file,
-                      log_levels[options.log_verbosity])
+    log = configure_loggers(log,
+                            log_levels[options.verbosity], 
+                            options.log_file,
+                            log_levels[options.log_verbosity])
     
     log.info('Ingestion started: %s' % data_dir)
     

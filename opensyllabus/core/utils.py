@@ -9,9 +9,51 @@ O-Desk: Astrey
 
 import os
 import re
+import logging
+import zipfile
 import subprocess
+from magic import Magic
+from logging.handlers import RotatingFileHandler
+from logging import StreamHandler, FileHandler, Formatter
 
 from opensyllabus.config import DATA_DIR
+
+
+log_levels = {
+    'debug': logging.DEBUG, 
+    'info': logging.INFO, 
+    'warning': logging.WARNING, 
+    'error': logging.ERROR
+}
+
+file_types = {
+    'application/pdf': 'pdf',
+    'application/msword': 'word',
+    'text/html': 'html',
+}
+
+def configure_loggers(log, verbosity, log_file, log_verbosity):
+    LOGFMT_CONSOLE = ('[%(asctime)s] %(name)-10s %(levelname)-7s in %(module)s.%(funcName)s(),'
+                      ' line %(lineno)d\n\t%(message)s')
+    
+    LOGFMT_FILE = ('[%(asctime)s] [%(process)d]%(name)-10s %(levelname)-7s in %(module)s.%(funcName)s(),'
+                   ' line %(lineno)d\n\t%(message)s')
+
+    # Configure root logger to log to stdout
+    logging.basicConfig(level=verbosity, datefmt='%H:%M:%S', format=LOGFMT_CONSOLE)
+    
+    # Configure main logger to rotate log files
+    rh = RotatingFileHandler(log_file, maxBytes=100000, backupCount=25)
+    log.addHandler(rh)
+
+    # Configure main logger to log to a file
+    if log_file:
+        fh = FileHandler(log_file, 'w')
+        fh.setFormatter(Formatter(LOGFMT_FILE, '%Y-%m-%d %H:%M:%S'))
+        fh.setLevel(log_verbosity)
+        log.addHandler(fh)
+        
+    return log
 
 
 def clean_list(in_list):
@@ -77,4 +119,27 @@ def get_file_ext(filename):
     ext = os.path.splitext(filename)[1].lower()
     if 7 > len(ext) > 1:
         return ext[1:]
-            
+
+    return None
+    
+    
+def get_file_type(filename):
+    """
+    Return file mime type
+    Input: filename
+    Output: file mime type
+    """
+    try:
+        mime_type = Magic(mime=True).from_file(filename)
+    except:
+        pass
+    else:
+        file_type = file_types.get(mime_type, None)
+        
+        if file_type == 'word':
+            if zipfile.is_zipfile(filename):
+                return 'docx'
+            else:
+                return 'doc'
+    
+        return file_type
