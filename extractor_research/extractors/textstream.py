@@ -8,7 +8,7 @@ class TextStream:
 
     def extract(self):
         # need to hardcode path because of imports
-        command = 'java -cp ~/workspace/OSP/opensyllabus/extractor_research/extractors/textstream:~/workspace/OSP/opensyllabus/extractor_research/extractors/textstream/lib/PDFTextStream.jar TextStream ' + self.pdf_file + ' ' + self.txt_file
+        command = 'java -cp "./extractors/textstream:./extractors/textstream/*" TextStream ' + self.pdf_file + ' ' + self.txt_file
         os.system(command)
 
 if __name__ == '__main__': 
