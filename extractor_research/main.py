@@ -58,13 +58,17 @@ def time_all(pdf_file):
     base_name = os.path.basename(pdf_file)
     directory_name = os.path.dirname(pdf_file)
 
+    # i.e. 'pride_and_prej' from './input/pride_and_prej/1.pdf'
     shorter_directory_name = os.path.basename(directory_name)
+    # i.e. '1' from './input/pride_and_prej/1.pdf'
     file_base_name = os.path.splitext(base_name)[0]
+
     output = ''
 
     for method in methods:
+        # build file path based on source text, input PDF, and method employed
         txt_file = './output/' + shorter_directory_name + '/' + method + '/' + file_base_name + '.txt'
-        
+
         command = method + '(\'%s\', \'%s\')' % (pdf_file, txt_file)
         temp = 'statsfile'
         cProfile.run(command, temp)
@@ -75,7 +79,12 @@ def time_all(pdf_file):
         stats.sort_stats('time')
         output = output + method + '\n-------------------------------------\n' + stream.getvalue()
 
-    print output
+    # clean up intermediary file
+    os.remove('statsfile')
+
+    # write results to log file
+    with open('./stats/' + shorter_directory_name + '/' + file_base_name + '_speed_log.txt', "w") as log_file:
+        log_file.write(output)
 
 if __name__ == '__main__': 
     pdf_file = './input/pride_and_prej/1.pdf'

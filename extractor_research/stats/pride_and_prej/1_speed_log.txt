@@ -1,0 +1,785 @@
+miner_with_layout
+-------------------------------------
+Wed Jul  2 10:37:18 2014    statsfile
+
+         68392167 function calls (67604268 primitive calls) in 74.971 seconds
+
+   Random listing order was used
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   703524    0.501    0.000    0.501    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:498(get_height)
+    49341    0.061    0.000    0.061    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:193(__init__)
+      262    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:390(set_current_state)
+  615/614    0.001    0.000    0.023    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:159(get_font)
+     5312    0.031    0.000    0.082    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:99(csort)
+    35007    0.124    0.000    0.162    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:583(dist)
+      349    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:578(do_g)
+     1071    0.002    0.000    0.002    0.000 {method 'read' of 'cStringIO.StringI' objects}
+     3780    0.002    0.000    0.002    0.000 {method 'split' of 'str' objects}
+     2046    0.003    0.000    0.336    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:154(dict_value)
+      187    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:583(do_RG)
+    81834    0.110    0.000    0.192    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:281(do_keyword)
+    29664    0.044    0.000    0.055    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:531(start_type)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:166(__init__)
+   223519    0.177    0.000    0.269    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:525(add_results)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:112(__init__)
+     6212    0.033    0.000    0.033    0.000 {method 'seek' of 'file' objects}
+     5078    0.001    0.000    0.001    0.000 {method 'remove' of 'set' objects}
+  1748748    1.073    0.000    1.325    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:230(fillbuf)
+      234    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+      394    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:702(char_disp)
+     1512    0.003    0.000    0.028    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:215(fillfp)
+    17744    2.050    0.000   20.463    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:84(render_string_horizontal)
+      472    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:208(get_any)
+        5    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/encodingdb.py:50(get_encoding)
+   703130    0.392    0.000    0.392    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:545(to_unichr)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:135(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x10770e328}
+     1046    0.000    0.000    0.000    0.000 {method 'tell' of 'cStringIO.StringI' objects}
+   694107    0.877    0.000    1.054    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:97(is_hoverlap)
+     2625    0.003    0.000    0.003    0.000 {method 'difference' of 'set' objects}
+      234    0.003    0.000   42.583    0.182 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:839(render_contents)
+       14    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+     3007    0.130    0.000    1.551    0.001 /Library/Python/2.7/site-packages/pdfminer/layout.py:549(group_textlines)
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:555(do_CS)
+   986706    2.857    0.000    4.502    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:274(_parse_main)
+      371    0.002    0.000    0.009    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:467(_parse_hexstring)
+     6198    0.011    0.000    0.011    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:499(reset)
+      496    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:95(__init__)
+     2773    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:660(<lambda>)
+  1397397    1.896    0.000    2.343    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:115(is_voverlap)
+     1050    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:674(do_Tc)
+   703524    0.841    0.000    0.841    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:64(translate_matrix)
+  3773904    1.147    0.000    1.147    0.000 {method 'append' of 'list' objects}
+     6495    0.030    0.000    0.030    0.000 {method 'read' of 'file' objects}
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:613(do_scn)
+  1830338    0.214    0.000    0.214    0.000 {abs}
+     6011    0.004    0.000    0.004    0.000 {method 'tell' of 'file' objects}
+     2773    0.010    0.000    0.557    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:415(analyze)
+     2625    0.017    0.000    0.265    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:601(isany)
+      234    0.007    0.000    0.043    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:319(init_resources)
+    11949    0.014    0.000    0.014    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+      376    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:696(is_multibyte)
+   137414    0.092    0.000    0.129    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:376(push)
+  1187425    0.365    0.000    0.387    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:135(__init__)
+        1    0.000    0.000    0.001    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:548(find_xref)
+        1    0.016    0.016    0.045    0.045 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:79(load)
+     3777    0.001    0.000    0.001    0.000 {method 'groups' of '_sre.SRE_Match' objects}
+        1    0.003    0.003    0.003    0.003 {__import__}
+    41199    0.376    0.000    0.609    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:307(find)
+   694107    1.673    0.000    3.259    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:126(voverlap)
+        1    0.001    0.001   74.971   74.971 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/miner.py:29(extract)
+   319328    0.186    0.000    0.720    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:483(decode)
+   703524    3.039    0.000   16.092    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:93(render_char)
+    81834    0.021    0.000    0.021    0.000 {getattr}
+      484    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:176(__init__)
+   723854    0.337    0.000    0.585    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:266(_getrange)
+     9427    0.012    0.000    0.129    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:324(__init__)
+   219248    0.387    0.000    0.761    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:273(flush)
+       76    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:435(_parse_string_1)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:146(__init__)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:15(decode)
+     5078    0.126    0.000    0.286    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:297(remove)
+      492    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:137(get_pos)
+      236    0.001    0.000    0.031    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:494(__init__)
+   703524    0.261    0.000    0.339    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:644(<lambda>)
+        2    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:71(__init__)
+      165    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:184(paint_path)
+      427    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:483(do_re)
+        2    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:91(__init__)
+  1985384    2.098    0.000    2.098    0.000 {method 'search' of '_sre.SRE_Pattern' objects}
+      776    0.002    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:474(<lambda>)
+   763331    3.186    0.000    6.234    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:300(add)
+   106289    0.206    0.000    0.206    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:119(drange)
+     3007    0.024    0.000    0.025    0.000 {method 'sort' of 'list' objects}
+      236    0.000    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:163(stream_value)
+        1    0.000    0.000   74.971   74.971 <string>:1(<module>)
+    28515    0.021    0.000    0.028    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:271(__iter__)
+   245502    0.109    0.000    0.109    0.000 {method 'replace' of 'str' objects}
+      234    0.006    0.000   28.961    0.124 /Library/Python/2.7/site-packages/pdfminer/converter.py:31(end_page)
+ 2539/227    0.009    0.000    0.595    0.003 /Library/Python/2.7/site-packages/pdfminer/layout.py:447(analyze)
+      776    0.000    0.000    0.000    0.000 {method 'group' of '_sre.SRE_Match' objects}
+      234    0.901    0.004   42.530    0.182 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:848(execute)
+    23949    0.113    0.000    0.318    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfparser.py:60(do_keyword)
+   703524    0.193    0.000    0.193    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:254(get_text)
+    21393    0.049    0.000    0.223    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:311(__init__)
+    21393    0.035    0.000    0.173    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:296(__init__)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:22(IncrementalDecoder)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfparser.py:48(set_document)
+        8    0.000    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:249(revreadlines)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:28(StreamReader)
+    64156    0.055    0.000    0.066    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:87(uniq)
+        1    0.000    0.000    0.003    0.003 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/__init__.py:71(search_function)
+    81834    0.059    0.000    0.071    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:131(keyword_name)
+      262    0.000    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:401(do_Q)
+ 11324349    3.686    0.000    3.686    0.000 {isinstance}
+     1100    0.002    0.000    0.516    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:60(resolve)
+      468    0.002    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:247(__init__)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:95(is_vertical)
+       36    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:80(__init__)
+      234    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:140(get_procset)
+      234    0.034    0.000   23.506    0.100 /Library/Python/2.7/site-packages/pdfminer/layout.py:641(analyze)
+   703524    0.826    0.000    0.826    0.000 {method 'encode' of 'unicode' objects}
+14739/234    0.383    0.000    0.603    0.003 /Library/Python/2.7/site-packages/pdfminer/layout.py:286(analyze)
+      496    0.002    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:49(__init__)
+      234    0.001    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:471(__init__)
+      121    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:58(__init__)
+   703130    0.113    0.000    0.113    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:513(char_disp)
+    17437    0.019    0.000    0.036    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:636(do_BT)
+   725151    1.090    0.000    2.866    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:75(__init__)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:8(<module>)
+   986026    0.742    0.000    1.392    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:318(_add_token)
+  3063303    0.807    0.000    0.807    0.000 {max}
+   950598    0.565    0.000    0.813    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:511(push)
+      492    0.003    0.000    0.507    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:438(_getobj_parse)
+      236    0.001    0.000    0.001    0.000 {cStringIO.StringIO}
+    17744    0.099    0.000   20.619    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:63(render_string)
+     5312    0.020    0.000    0.044    0.000 {sorted}
+     2539    0.005    0.000    0.082    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:439(__init__)
+  703/235    0.003    0.000    0.322    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:77(search)
+        1    0.000    0.000    0.046    0.046 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:567(read_xref_from)
+      236    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:214(get_filters)
+  1242103    1.036    0.000    1.036    0.000 {method 'pop' of 'list' objects}
+      262    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:551(do_W_a)
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:564(do_cs)
+        1    0.000    0.000   74.971   74.971 main.py:17(miner_with_layout)
+        3    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:174(set_attr)
+    14933    0.011    0.000    0.011    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:48(__init__)
+   106316    0.368    0.000    0.742    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:393(_parse_keyword)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:309(__init__)
+    35495    0.108    0.000    0.224    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:334(_parse_literal)
+   777673    0.126    0.000    0.126    0.000 {method 'isdigit' of 'str' objects}
+    37806    0.150    0.000    0.242    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:379(_parse_float)
+    14505    0.011    0.000    0.024    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:102(<lambda>)
+     3788    0.001    0.000    0.001    0.000 {method 'strip' of 'str' objects}
+      234    0.649    0.003    0.653    0.003 /Library/Python/2.7/site-packages/pdfminer/converter.py:23(begin_page)
+   151718    0.045    0.000    0.045    0.000 {method 'remove' of 'list' objects}
+      484    0.001    0.000    0.001    0.000 {method 'index' of 'str' objects}
+   462629    1.998    0.000    3.118    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:360(_parse_number)
+    29664    0.199    0.000    0.218    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:538(end_type)
+     2773    0.002    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:257(__iter__)
+     2124    0.001    0.000    0.001    0.000 {method 'get' of 'dict' objects}
+   319329    0.534    0.000    0.534    0.000 {map}
+  1950998    0.384    0.000    0.384    0.000 {method 'start' of '_sre.SRE_Match' objects}
+      234    0.004    0.000   72.201    0.309 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:819(process_page)
+    20875    0.003    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:172(flush)
+    13308    0.007    0.000    0.010    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:274(__len__)
+    33543    0.131    0.000    0.239    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:219(nextline)
+3989/3753    0.005    0.000    0.523    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:68(resolve1)
+    14739    0.333    0.000    0.641    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:285(add)
+      234    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:10(__init__)
+     5961    0.019    0.000    0.049    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:191(seek)
+      376    0.001    0.000    0.005    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:699(decode)
+      234    0.003    0.000    0.183    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:41(__init__)
+     2156    0.004    0.000    0.006    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:694(do_Tf)
+   185438    0.148    0.000    0.148    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:102(intern)
+     1164    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:693(is_vertical)
+      234    0.117    0.000    1.322    0.006 /Library/Python/2.7/site-packages/pdfminer/layout.py:580(group_textboxes)
+     2793    0.004    0.000    0.005    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:669(do_EMC)
+        5    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:71(get_metrics)
+   278817    0.155    0.000    0.222    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:208(fillbuf)
+    17437    0.004    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:641(do_ET)
+      234    0.001    0.000    0.030    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:225(seek)
+     9427    0.074    0.000    0.452    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:359(find_neighbors)
+       29    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:127(num_value)
+    31288    0.008    0.000    0.008    0.000 {iter}
+   703290    0.153    0.000    0.153    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:257(is_compatible)
+     9427    0.013    0.000    0.093    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:402(__init__)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:285(__init__)
+     2793    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:28(begin_tag)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:25(StreamWriter)
+      236    0.000    0.000    0.030    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:164(__init__)
+        5    0.000    0.000    0.010    0.002 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:560(__init__)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfparser.py:42(__init__)
+    17433    0.016    0.000    0.016    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:732(do_Tm)
+      740    0.003    0.000    0.006    0.000 {method 'sub' of '_sre.SRE_Pattern' objects}
+   322245    1.053    0.000    1.914    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:410(_parse_string)
+      248    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:205(get)
+      235    0.001    0.000    0.506    0.002 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:75(create_pages)
+        2    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+      262    0.000    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:387(get_current_state)
+   223754    2.725    0.000   22.770    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:550(nextobject)
+   755872    0.679    0.000    2.098    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:153(write_text)
+      262    0.000    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:396(do_q)
+      468    0.007    0.000    0.403    0.001 /Library/Python/2.7/site-packages/pdfminer/utils.py:279(extend)
+     9427    0.004    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:417(<lambda>)
+   703524    2.011    0.000    8.120    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:350(add)
+    81835    0.052    0.000    0.052    0.000 {hasattr}
+      496    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:24(set_ctm)
+        1    0.000    0.000    0.000    0.000 {_codecs.utf_16_be_decode}
+     5078    0.009    0.000    0.009    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:450(<lambda>)
+    21627    0.029    0.000    0.141    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:266(__init__)
+      262    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:542(do_n)
+    12200    0.006    0.000    0.006    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:94(is_empty)
+     9427    0.006    0.000    0.010    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:650(<lambda>)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:21(get_widths)
+        6    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:458(__init__)
+     2793    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:31(end_tag)
+        1    0.040    0.040    2.213    2.213 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:153(load)
+   219253    0.110    0.000    0.110    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:520(popall)
+    19817    0.007    0.000    0.007    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:101(<genexpr>)
+      234    0.001    0.000    0.032    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:209(__init__)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/__init__.py:49(normalize_encoding)
+        5    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:523(__init__)
+      165    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:512(do_f_a)
+      262    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:105(copy)
+    17368    0.007    0.000    0.007    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:480(is_multibyte)
+    17744    0.045    0.000    0.045    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:57(mult_matrix)
+    26192    0.017    0.000    0.021    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:122(literal_name)
+      788    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:116(get_unichr)
+      235    0.000    0.000    0.000    0.000 {method 'seek' of 'cStringIO.StringI' objects}
+       18    0.000    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:299(do_keyword)
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:443(do_i)
+     2793    0.004    0.000    0.005    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:665(do_BDC)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:28(__init__)
+     8190    0.011    0.000    0.021    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:449(_parse_wopen)
+   694107    0.961    0.000    2.324    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:101(hdistance)
+    31821    0.032    0.000    0.121    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:582(<genexpr>)
+    17744    0.040    0.000   20.659    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:745(do_TJ)
+  1488482    3.399    0.000    3.399    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:84(set_bbox)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:256(get_cmap)
+        1    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+      294    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:573(do_G)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:161(nunpack)
+      236    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:186(set_objid)
+     5961    0.012    0.000    0.072    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:506(seek)
+    42954    0.082    0.000    0.082    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:380(pop)
+        1    0.000    0.000    0.003    0.003 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:178(add_cid2unichr)
+   986261    3.626    0.000   16.759    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:480(nexttoken)
+     2539    0.004    0.000    0.051    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:281(extend)
+  3249379    0.909    0.000    0.909    0.000 {min}
+    52348    0.074    0.000    0.074    0.000 {method 'encode' of 'str' objects}
+        1    0.000    0.000    0.005    0.005 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:292(run)
+      248    0.000    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:109(int_value)
+      788    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:706(to_unichr)
+    19691    0.021    0.000    0.021    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:515(pop)
+        1    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+  1516196    0.927    0.000    1.230    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:277(add)
+     8190    0.011    0.000    0.021    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:459(_parse_wclose)
+    17933    0.018    0.000    0.018    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:85(reset)
+765299/234    2.158    0.000    5.447    0.023 /Library/Python/2.7/site-packages/pdfminer/converter.py:158(render)
+      234    0.001    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:694(__init__)
+      190    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:588(do_rg)
+      892    0.001    0.000    0.001    0.000 {chr}
+   743438    0.085    0.000    0.085    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:54(analyze)
+    49341    0.011    0.000    0.011    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:197(get_text)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/codecs.py:77(__new__)
+   703524    0.455    0.000    0.456    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:504(char_width)
+   621694    0.425    0.000    0.756    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:83(isnumber)
+   703524    6.184    0.000   11.402    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:205(__init__)
+   488387    0.133    0.000    0.133    0.000 {method 'isalpha' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:131(get_trailer)
+        1    0.000    0.000    0.000    0.000 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/miner.py:8(__init__)
+      235    0.001    0.000    2.768    0.012 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:114(get_pages)
+      234    0.001    0.000    5.449    0.023 /Library/Python/2.7/site-packages/pdfminer/converter.py:157(receive_layout)
+ 5312/234    0.010    0.000    0.015    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:14(run)
+     9427    0.016    0.000    0.145    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:345(__init__)
+    67086    0.009    0.000    0.009    0.000 {method 'end' of '_sre.SRE_Match' objects}
+      234    0.004    0.000    0.006    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:360(init_state)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:16(__init__)
+  1423628    0.295    0.000    0.295    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:477(is_vertical)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:13(__init__)
+      262    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:71(copy)
+   755872    0.518    0.000    0.518    0.000 {method 'write' of 'file' objects}
+      366    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:574(<genexpr>)
+        1    0.000    0.000    0.011    0.011 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:622(__init__)
+      236    0.002    0.000    0.023    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:222(decode)
+      311    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:723(do_TD)
+      236    0.001    0.000    0.024    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:276(get_data)
+   703524    0.241    0.000    0.241    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:489(get_descent)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+      470    0.001    0.000    0.001    0.000 {method 'copy' of 'dict' objects}
+    13308    0.003    0.000    0.003    0.000 {method 'pop' of 'dict' objects}
+      401    0.001    0.000    0.001    0.000 {_struct.unpack}
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:603(do_SCN)
+   128637    0.028    0.000    0.028    0.000 {method 'add' of 'set' objects}
+     9427    0.026    0.000    0.492    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:334(analyze)
+      468    0.442    0.001    0.864    0.002 /Library/Python/2.7/site-packages/pdfminer/utils.py:106(fsplit)
+      468    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:260(__len__)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:21(close)
+     9661    3.262    0.000   19.110    0.002 /Library/Python/2.7/site-packages/pdfminer/layout.py:477(group_objects)
+        1    0.000    0.000    2.261    2.261 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:291(__init__)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:18(IncrementalEncoder)
+        2    0.000    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:118(load_trailer)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:33(getregentry)
+     1100    0.006    0.000    0.514    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:451(getobj)
+      236    0.020    0.000    0.020    0.000 {zlib.decompress}
+  1407516    1.432    0.000    1.432    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:69(apply_matrix_pt)
+      376    0.003    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:98(decode)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:368(__init__)
+      120    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:350(_parse_literal_hex)
+      703    0.000    0.000    0.000    0.000 {method 'iteritems' of 'dict' objects}
+    31823    0.056    0.000    0.070    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:149(choplist)
+2166424/2166190    0.303    0.000    0.304    0.000 {len}
+    11756    0.006    0.000    0.006    0.000 {method 'startswith' of 'str' objects}
+      481    0.001    0.000    0.008    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:145(list_value)
+
+
+miner_without_layout
+-------------------------------------
+Wed Jul  2 10:38:12 2014    statsfile
+
+         41845770 function calls (41141541 primitive calls) in 54.514 seconds
+
+   Random listing order was used
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+   703524    0.532    0.000    0.532    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:498(get_height)
+   703758    0.652    0.000    2.042    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:153(write_text)
+      262    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:390(set_current_state)
+  615/614    0.001    0.000    0.022    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:159(get_font)
+   137414    0.104    0.000    0.142    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:376(push)
+      349    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:578(do_g)
+     1071    0.002    0.000    0.002    0.000 {method 'read' of 'cStringIO.StringI' objects}
+     3779    0.002    0.000    0.002    0.000 {method 'split' of 'str' objects}
+     2046    0.003    0.000    0.395    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:154(dict_value)
+    17933    0.019    0.000    0.019    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:85(reset)
+  1174117    0.361    0.000    0.361    0.000 {method 'extend' of 'list' objects}
+    42954    0.087    0.000    0.087    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:380(pop)
+    29664    0.047    0.000    0.058    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:531(start_type)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:166(__init__)
+   223519    0.180    0.000    0.276    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:525(add_results)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:112(__init__)
+     6212    0.046    0.000    0.046    0.000 {method 'seek' of 'file' objects}
+  1748748    1.123    0.000    1.389    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:230(fillbuf)
+      234    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+      394    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:702(char_disp)
+     1512    0.004    0.000    0.030    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:215(fillfp)
+    17744    2.172    0.000   21.606    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:84(render_string_horizontal)
+      190    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:588(do_rg)
+   703130    0.410    0.000    0.410    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:545(to_unichr)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:135(__init__)
+     1046    0.000    0.000    0.000    0.000 {method 'tell' of 'cStringIO.StringI' objects}
+        1    0.002    0.002   54.514   54.514 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/miner.py:29(extract)
+      234    0.003    0.000   44.995    0.192 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:839(render_contents)
+       14    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:555(do_CS)
+      371    0.002    0.000    0.010    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:467(_parse_hexstring)
+     6198    0.015    0.000    0.015    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:499(reset)
+      496    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:95(__init__)
+     1050    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:674(do_Tc)
+   703524    0.874    0.000    0.874    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:64(translate_matrix)
+  1907033    0.891    0.000    0.891    0.000 {method 'append' of 'list' objects}
+     6495    0.032    0.000    0.032    0.000 {method 'read' of 'file' objects}
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:613(do_scn)
+     6011    0.005    0.000    0.005    0.000 {method 'tell' of 'file' objects}
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:603(do_SCN)
+      234    0.007    0.000    0.046    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:319(init_resources)
+    11949    0.021    0.000    0.021    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+      376    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:696(is_multibyte)
+   777673    0.134    0.000    0.134    0.000 {method 'isdigit' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/miner.py:8(__init__)
+    81834    0.113    0.000    0.201    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:281(do_keyword)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:95(is_vertical)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:548(find_xref)
+        1    0.020    0.020    0.056    0.056 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:79(load)
+     3777    0.002    0.000    0.002    0.000 {method 'groups' of '_sre.SRE_Match' objects}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:161(nunpack)
+   319328    0.198    0.000    0.770    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:483(decode)
+   703524    3.174    0.000   16.986    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:93(render_char)
+    81834    0.022    0.000    0.022    0.000 {getattr}
+      484    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:176(__init__)
+   219248    0.412    0.000    0.794    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:273(flush)
+       76    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:435(_parse_string_1)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_16_be.py:15(decode)
+      165    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:512(do_f_a)
+      492    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:137(get_pos)
+      236    0.001    0.000    0.033    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:494(__init__)
+        2    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:71(__init__)
+      165    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:184(paint_path)
+      427    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:483(do_re)
+        2    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:91(__init__)
+  1985384    2.271    0.000    2.271    0.000 {method 'search' of '_sre.SRE_Pattern' objects}
+      776    0.002    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:474(<lambda>)
+     3788    0.001    0.000    0.001    0.000 {method 'strip' of 'str' objects}
+      236    0.000    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:163(stream_value)
+     8190    0.013    0.000    0.025    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:449(_parse_wopen)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:256(get_cmap)
+   245502    0.114    0.000    0.114    0.000 {method 'replace' of 'str' objects}
+      234    0.002    0.000    5.275    0.023 /Library/Python/2.7/site-packages/pdfminer/converter.py:31(end_page)
+      776    0.000    0.000    0.000    0.000 {method 'group' of '_sre.SRE_Match' objects}
+      234    0.958    0.004   44.940    0.192 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:848(execute)
+    23949    0.165    0.000    0.407    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfparser.py:60(do_keyword)
+   703524    0.198    0.000    0.198    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:254(get_text)
+        1    0.000    0.000   54.514   54.514 main.py:21(miner_without_layout)
+  1407516    1.497    0.000    1.497    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:69(apply_matrix_pt)
+      234    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:140(get_procset)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfparser.py:48(set_document)
+        8    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:249(revreadlines)
+      187    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:583(do_RG)
+    81834    0.066    0.000    0.078    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:131(keyword_name)
+      262    0.000    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:401(do_Q)
+  5466262    2.374    0.000    2.374    0.000 {isinstance}
+     1100    0.002    0.000    0.581    0.001 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:60(resolve)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:135(__init__)
+      236    0.000    0.000    0.032    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:164(__init__)
+   703524    0.889    0.000    0.889    0.000 {method 'encode' of 'unicode' objects}
+        3    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:174(set_attr)
+      496    0.002    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:49(__init__)
+      234    0.001    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:471(__init__)
+   703130    0.120    0.000    0.120    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:513(char_disp)
+    17437    0.021    0.000    0.040    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:636(do_BT)
+   703758    1.004    0.000    2.783    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:75(__init__)
+   986026    0.797    0.000    1.504    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:318(_add_token)
+        8    0.000    0.000    0.000    0.000 {max}
+   986706    3.110    0.000    4.894    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:274(_parse_main)
+      236    0.001    0.000    0.001    0.000 {cStringIO.StringIO}
+       29    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:127(num_value)
+    20875    0.004    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:172(flush)
+    31823    0.069    0.000    0.085    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:149(choplist)
+  703/235    0.004    0.000    0.375    0.002 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:77(search)
+        1    0.000    0.000    0.056    0.056 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:567(read_xref_from)
+      236    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:214(get_filters)
+  1239471    1.114    0.000    1.114    0.000 {method 'pop' of 'list' objects}
+      262    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:551(do_W_a)
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:564(do_cs)
+    14933    0.013    0.000    0.013    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:48(__init__)
+    35495    0.133    0.000    0.264    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:334(_parse_literal)
+  1950998    0.395    0.000    0.395    0.000 {method 'start' of '_sre.SRE_Match' objects}
+    37806    0.157    0.000    0.250    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:379(_parse_float)
+     2793    0.005    0.000    0.005    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:669(do_EMC)
+      234    0.628    0.003    0.632    0.003 /Library/Python/2.7/site-packages/pdfminer/converter.py:23(begin_page)
+      484    0.001    0.000    0.001    0.000 {method 'index' of 'str' objects}
+   462629    2.181    0.000    3.385    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:360(_parse_number)
+    29664    0.220    0.000    0.241    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:538(end_type)
+     2793    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:31(end_tag)
+     2122    0.001    0.000    0.001    0.000 {method 'get' of 'dict' objects}
+   319329    0.572    0.000    0.572    0.000 {map}
+      234    0.004    0.000   50.907    0.218 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:819(process_page)
+    33543    0.163    0.000    0.294    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:219(nextline)
+3989/3753    0.005    0.000    0.589    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:68(resolve1)
+     5961    0.024    0.000    0.068    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:191(seek)
+   950598    0.611    0.000    0.877    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:511(push)
+      376    0.001    0.000    0.005    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:699(decode)
+      234    0.003    0.000    0.189    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:41(__init__)
+     2156    0.005    0.000    0.007    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:694(do_Tf)
+   185438    0.170    0.000    0.170    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:102(intern)
+      492    0.004    0.000    0.571    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:438(_getobj_parse)
+      234    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:271(__iter__)
+        5    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:71(get_metrics)
+   278817    0.191    0.000    0.271    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:208(fillbuf)
+    17437    0.005    0.000    0.005    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:641(do_ET)
+    17744    0.112    0.000   21.779    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:63(render_string)
+      234    0.000    0.000    0.000    0.000 {iter}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:309(__init__)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:285(__init__)
+     2793    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:28(begin_tag)
+        5    0.000    0.000    0.014    0.003 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:560(__init__)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfparser.py:42(__init__)
+    17433    0.017    0.000    0.017    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:732(do_Tm)
+      740    0.004    0.000    0.007    0.000 {method 'sub' of '_sre.SRE_Pattern' objects}
+   322245    1.120    0.000    2.014    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:410(_parse_string)
+      248    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:205(get)
+      235    0.001    0.000    0.566    0.002 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:75(create_pages)
+        2    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+      262    0.000    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:387(get_current_state)
+   223754    2.956    0.000   24.643    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:550(nextobject)
+      262    0.000    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:396(do_q)
+        2    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:131(get_trailer)
+    81834    0.061    0.000    0.061    0.000 {hasattr}
+      496    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:24(set_ctm)
+        1    0.000    0.000    0.000    0.000 {_codecs.utf_16_be_decode}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:21(close)
+      234    0.000    0.000    0.003    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:266(__init__)
+      262    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:542(do_n)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:21(get_widths)
+        6    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:458(__init__)
+        1    0.000    0.000    0.006    0.006 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:622(__init__)
+        1    0.063    0.063    2.981    2.981 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:153(load)
+   219253    0.112    0.000    0.112    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:520(popall)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:146(__init__)
+      234    0.001    0.000    0.034    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:209(__init__)
+   106316    0.413    0.000    0.832    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:393(_parse_keyword)
+        5    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/encodingdb.py:50(get_encoding)
+    17368    0.007    0.000    0.007    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:480(is_multibyte)
+    17744    0.048    0.000    0.048    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:57(mult_matrix)
+    26192    0.021    0.000    0.026    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:122(literal_name)
+      788    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:116(get_unichr)
+      235    0.000    0.000    0.000    0.000 {method 'seek' of 'cStringIO.StringI' objects}
+       18    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:299(do_keyword)
+     2793    0.005    0.000    0.006    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:665(do_BDC)
+        1    0.000    0.000   54.514   54.514 <string>:1(<module>)
+    31821    0.037    0.000    0.146    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:582(<genexpr>)
+    17744    0.047    0.000   21.826    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:745(do_TJ)
+   703758    1.780    0.000    1.780    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:84(set_bbox)
+        5    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:523(__init__)
+      236    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:186(set_objid)
+     5961    0.016    0.000    0.099    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:506(seek)
+        4    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:443(do_i)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:178(add_cid2unichr)
+   986261    3.879    0.000   18.096    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:480(nexttoken)
+      234    0.001    0.000    0.001    0.000 {method 'encode' of 'str' objects}
+        1    0.000    0.000    0.001    0.001 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:292(run)
+      248    0.000    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:109(int_value)
+      788    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:706(to_unichr)
+    19691    0.028    0.000    0.028    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:515(pop)
+   703524    0.454    0.000    0.577    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:277(add)
+     8190    0.013    0.000    0.029    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:459(_parse_wclose)
+  2149407    0.325    0.000    0.325    0.000 {len}
+703758/234    2.098    0.000    5.271    0.023 /Library/Python/2.7/site-packages/pdfminer/converter.py:158(render)
+      234    0.001    0.000    0.004    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:694(__init__)
+      472    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:208(get_any)
+      892    0.001    0.000    0.001    0.000 {chr}
+     1164    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:693(is_vertical)
+      468    0.000    0.000    0.000    0.000 {abs}
+   703524    0.486    0.000    0.486    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:504(char_width)
+   621694    0.454    0.000    0.799    0.000 /Library/Python/2.7/site-packages/pdfminer/utils.py:83(isnumber)
+   703524    6.696    0.000   12.067    0.000 /Library/Python/2.7/site-packages/pdfminer/layout.py:205(__init__)
+   488387    0.145    0.000    0.145    0.000 {method 'isalpha' of 'str' objects}
+      235    0.001    0.000    3.606    0.015 /Library/Python/2.7/site-packages/pdfminer/pdfpage.py:114(get_pages)
+      234    0.001    0.000    5.273    0.023 /Library/Python/2.7/site-packages/pdfminer/converter.py:157(receive_layout)
+    67086    0.012    0.000    0.012    0.000 {method 'end' of '_sre.SRE_Match' objects}
+      234    0.004    0.000    0.006    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:360(init_state)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/converter.py:16(__init__)
+  1423628    0.309    0.000    0.309    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:477(is_vertical)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfdevice.py:13(__init__)
+      262    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:71(copy)
+   703758    0.500    0.000    0.500    0.000 {method 'write' of 'file' objects}
+      366    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:574(<genexpr>)
+      236    0.002    0.000    0.024    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:222(decode)
+      311    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:723(do_TD)
+      236    0.001    0.000    0.025    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:276(get_data)
+   703524    0.257    0.000    0.257    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:489(get_descent)
+      470    0.001    0.000    0.001    0.000 {method 'copy' of 'dict' objects}
+        1    0.000    0.000    3.039    3.039 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:291(__init__)
+      401    0.001    0.000    0.001    0.000 {_struct.unpack}
+      481    0.001    0.000    0.010    0.000 /Library/Python/2.7/site-packages/pdfminer/pdftypes.py:145(list_value)
+      234    0.001    0.000    0.032    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:225(seek)
+      262    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:105(copy)
+      294    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdfinterp.py:573(do_G)
+        2    0.000    0.000    0.001    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:118(load_trailer)
+     1100    0.007    0.000    0.579    0.001 /Library/Python/2.7/site-packages/pdfminer/pdfdocument.py:451(getobj)
+      236    0.020    0.000    0.020    0.000 {zlib.decompress}
+      376    0.004    0.000    0.005    0.000 /Library/Python/2.7/site-packages/pdfminer/cmapdb.py:98(decode)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/pdffont.py:368(__init__)
+      120    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/pdfminer/psparser.py:350(_parse_literal_hex)
+      703    0.000    0.000    0.000    0.000 {method 'iteritems' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+    11756    0.009    0.000    0.009    0.000 {method 'startswith' of 'str' objects}
+
+
+xpdf_with_layout
+-------------------------------------
+Wed Jul  2 10:38:14 2014    statsfile
+
+         6 function calls in 1.506 seconds
+
+   Random listing order was used
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    1.506    1.506 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/xpdf.py:11(extract)
+        1    1.506    1.506    1.506    1.506 {posix.system}
+        1    0.000    0.000    1.506    1.506 <string>:1(<module>)
+        1    0.000    0.000    1.506    1.506 main.py:25(xpdf_with_layout)
+        1    0.000    0.000    0.000    0.000 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/xpdf.py:5(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+xpdf_without_layout
+-------------------------------------
+Wed Jul  2 10:38:15 2014    statsfile
+
+         6 function calls in 1.561 seconds
+
+   Random listing order was used
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    1.561    1.561 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/xpdf.py:11(extract)
+        1    1.561    1.561    1.561    1.561 {posix.system}
+        1    0.000    0.000    1.561    1.561 main.py:29(xpdf_without_layout)
+        1    0.000    0.000    1.561    1.561 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/xpdf.py:5(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+textstream_default
+-------------------------------------
+Wed Jul  2 10:38:19 2014    statsfile
+
+         6 function calls in 3.184 seconds
+
+   Random listing order was used
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    3.184    3.184    3.184    3.184 {posix.system}
+        1    0.000    0.000    0.000    0.000 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/textstream.py:5(__init__)
+        1    0.000    0.000    3.184    3.184 main.py:33(textstream_default)
+        1    0.000    0.000    3.184    3.184 <string>:1(<module>)
+        1    0.000    0.000    3.184    3.184 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/textstream.py:9(extract)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+pdf2_default
+-------------------------------------
+Wed Jul  2 10:38:47 2014    statsfile
+
+         36866173 function calls (36219956 primitive calls) in 28.755 seconds
+
+   Random listing order was used
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.002    0.002 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:676(parse)
+        5    0.000    0.000    0.001    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:179(_compile_charset)
+    235/1    0.004    0.000    0.419    0.419 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1053(_flatten)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:20(IncrementalEncoder)
+        2    0.000    0.000    0.000    0.000 {open}
+  5876066    1.562    0.000    1.562    0.000 {method 'read' of 'cStringIO.StringI' objects}
+    15952    0.038    0.000    0.046    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:452(__init__)
+     3779    0.007    0.000    0.007    0.000 {method 'split' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:68(__init__)
+3734/3264    0.070    0.000    0.854    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:566(readFromStream)
+   708899    0.447    0.000    0.543    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:196(ord_)
+      234    0.001    0.000   27.355    0.117 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:2164(__init__)
+   380540    0.227    0.000    0.862    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:240(__new__)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:179(__init__)
+     11/5    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:141(getwidth)
+        1    0.070    0.070    0.109    0.109 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1241(read)
+      366    0.006    0.000    0.019    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:290(readHexStringFromStream)
+       16    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:196(match)
+     1383    0.020    0.000    0.038    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:190(readFromStream)
+      234    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:839(__init__)
+      234    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1641(__init__)
+   843637    0.194    0.000    0.194    0.000 {method 'append' of 'list' objects}
+    97728    0.097    0.000    0.097    0.000 {method 'read' of 'file' objects}
+      945    0.001    0.000    0.001    0.000 {method 'tell' of 'file' objects}
+      940    0.004    0.000    0.008    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:59(readUntilWhitespace)
+   283769    0.411    0.000    0.411    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+     1176    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:94(getObject)
+        4    0.000    0.000    0.001    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1487(readNextEndLine)
+      705    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1592(getIsEncrypted)
+   219248    0.040    0.000    0.040    0.000 {method 'isalpha' of 'str' objects}
+    15012    0.145    0.000    0.316    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:458(readFromStream)
+      234    0.000    0.000    0.017    0.000 /Library/Python/2.7/site-packages/PyPDF2/filters.py:46(decompress)
+   255586    0.096    0.000    0.096    0.000 {method 'get' of 'dict' objects}
+      470    0.005    0.000    0.478    0.001 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1140(getObject)
+    37541    0.014    0.000    0.014    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:187(str_)
+    15012    0.030    0.000    0.030    0.000 {_codecs.utf_8_decode}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1020(<lambda>)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:121(readFromStream)
+    37541    0.009    0.000    0.009    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:103(__init__)
+        1    0.000    0.000   28.755   28.755 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+   708904    0.096    0.000    0.096    0.000 {ord}
+      470    0.001    0.000    0.480    0.001 /Library/Python/2.7/site-packages/PyPDF2/generic.py:169(getObject)
+   150164    0.041    0.000    0.041    0.000 {method 'group' of '_sre.SRE_Match' objects}
+     2793    0.001    0.000    0.001    0.000 {method 'tell' of 'cStringIO.StringI' objects}
+        1    0.000    0.000    0.109    0.109 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:775(__init__)
+        1    0.000    0.000    0.003    0.003 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/__init__.py:71(search_function)
+    15012    0.023    0.000    0.065    0.000 {method 'decode' of 'str' objects}
+   321988    1.863    0.000    8.428    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:312(readStringFromStream)
+    18216    2.063    0.000   20.824    0.001 /Library/Python/2.7/site-packages/PyPDF2/generic.py:141(readFromStream)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:41(getregentry)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:31(StreamReader)
+        1    0.000    0.000    0.109    0.109 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/pdf2.py:5(__init__)
+        4    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:258(_escape)
+      235    0.000    0.000    0.421    0.002 /Library/Python/2.7/site-packages/PyPDF2/utils.py:107(__len__)
+      7/1    0.000    0.000    0.002    0.002 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:33(_compile)
+    15012    0.013    0.000    0.042    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/utf_8.py:15(decode)
+      234    0.000    0.000    0.000    0.000 {cStringIO.StringIO}
+       18    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:127(__len__)
+      234    0.000    0.000    0.017    0.000 /Library/Python/2.7/site-packages/PyPDF2/filters.py:101(decode)
+        1    0.000    0.000    0.001    0.001 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:362(_compile_info)
+     8173    0.003    0.000    0.003    0.000 {method 'items' of 'dict' objects}
+      3/1    0.001    0.000    0.001    0.001 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:380(_parse)
+     7703    0.023    0.000    0.049    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:505(update)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:34(StreamConverter)
+      234    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:785(__init__)
+      470    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1225(cacheGetIndirectObject)
+       19    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:202(get)
+      705    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1599(<lambda>)
+        5    0.001    0.000    0.001    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:208(_optimize_charset)
+     9588    0.017    0.000    0.024    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:514(__setitem__)
+      234    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:882(getPage)
+        1    0.000    0.000    0.000    0.000 {_sre.compile}
+        2    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:84(closegroup)
+    32924    0.029    0.000    0.029    0.000 {method 'seek' of 'file' objects}
+        4    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:135(__setitem__)
+      234    0.916    0.004   27.331    0.117 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:2179(__parseContentStream)
+        8    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:25(_identityfunction)
+   418081    3.356    0.000    7.040    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:249(readFromStream)
+        2    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+   246228    0.232    0.000    0.920    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/re.py:134(match)
+      470    0.005    0.000    0.022    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1205(readObjectHeader)
+      235    0.001    0.000    0.421    0.002 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:852(getNumPages)
+       14    0.000    0.000    0.000    0.000 {min}
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:28(StreamWriter)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:13(Codec)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:24(IncrementalDecoder)
+     3735    0.005    0.000    0.014    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:490(__init__)
+   246228    0.285    0.000    0.383    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/re.py:226(_compile)
+      940    0.002    0.000    0.003    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:83(skipOverWhitespace)
+        1    0.000    0.000    0.004    0.004 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:496(compile)
+      234    0.454    0.002   28.111    0.120 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:2090(extractText)
+   418081    0.193    0.000    0.193    0.000 {method 'find' of 'str' objects}
+778781/137887    3.293    0.000   25.843    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:48(readObject)
+        2    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:73(opengroup)
+        2    0.000    0.000    0.000    0.000 {hasattr}
+       30    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:131(__getitem__)
+   322354    1.409    0.000    4.001    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:1052(decode_pdfdocencoding)
+    37541    0.070    0.000    0.588    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:219(__new__)
+      234    0.002    0.000    0.022    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:842(getData)
+      3/1    0.000    0.000    0.001    0.001 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:302(_parse_sub)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/__init__.py:49(normalize_encoding)
+        4    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:355(_simple)
+   322354    1.003    0.000    5.377    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:267(createStringObject)
+  3019670    0.916    0.000    0.916    0.000 {method 'seek' of 'cStringIO.StringI' objects}
+   247770    0.469    0.000    0.732    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:74(readNonWhitespace)
+        7    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:91(__init__)
+   975755    0.148    0.000    0.148    0.000 {method 'isspace' of 'str' objects}
+        1    0.000    0.000   28.755   28.755 main.py:37(pdf2_default)
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/encodings/ascii.py:8(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+      378    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:208(barray)
+        2    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:475(isstring)
+        1    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+ 15130537    4.461    0.000    4.461    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:171(b_)
+292379/287776    0.047    0.000    0.467    0.000 {len}
+   434034    0.659    0.000    0.659    0.000 {built-in method __new__ of type object at 0x10770e328}
+      470    0.001    0.000    0.001    0.000 /Library/Python/2.7/site-packages/PyPDF2/pdf.py:1232(cacheIndirectObject)
+      768    0.000    0.000    0.000    0.000 {chr}
+  1154539    0.137    0.000    0.137    0.000 {method 'isdigit' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/codecs.py:77(__new__)
+        1    0.000    0.000    0.000    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:112(__init__)
+        2    0.000    0.000    0.000    0.000 {range}
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+        8    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:139(append)
+  1324529    0.358    0.000    0.358    0.000 {isinstance}
+    37541    0.307    0.000    0.504    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/decimal.py:515(__new__)
+      234    0.010    0.000    0.013    0.000 {method 'write' of 'file' objects}
+      470    0.001    0.000    0.002    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:95(skipOverComment)
+      234    0.003    0.000    0.020    0.000 /Library/Python/2.7/site-packages/PyPDF2/filters.py:301(decodeStreamData)
+        1    0.003    0.003    0.003    0.003 {__import__}
+        1    0.000    0.000    0.002    0.002 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_compile.py:481(_code)
+      234    0.001    0.000    0.003    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:800(initializeFromDictionary)
+       25    0.000    0.000    0.000    0.000 /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/sre_parse.py:183(__next)
+      472    0.001    0.000    0.104    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:528(__getitem__)
+        1    0.098    0.098   28.646   28.646 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/pdf2.py:9(extract)
+  1031487    2.049    0.000    2.049    0.000 /Library/Python/2.7/site-packages/PyPDF2/utils.py:180(u_)
+      235    0.001    0.000    0.423    0.002 /Library/Python/2.7/site-packages/PyPDF2/utils.py:110(__getitem__)
+     1383    0.003    0.000    0.003    0.000 /Library/Python/2.7/site-packages/PyPDF2/generic.py:164(__init__)
+      234    0.016    0.000    0.016    0.000 {zlib.decompress}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+   322354    0.156    0.000    0.156    0.000 {method 'startswith' of 'str' objects}
+
+
+pdfbox_default
+-------------------------------------
+Wed Jul  2 10:38:54 2014    statsfile
+
+         6 function calls in 6.760 seconds
+
+   Random listing order was used
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    6.760    6.760 main.py:41(pdfbox_default)
+        1    6.760    6.760    6.760    6.760 {posix.system}
+        1    0.000    0.000    6.760    6.760 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/pdfbox.py:9(extract)
+        1    0.000    0.000    0.000    0.000 /Users/markagorenstein/workspace/OSP/opensyllabus/extractor_research/extractors/pdfbox.py:5(__init__)
+        1    0.000    0.000    6.760    6.760 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
